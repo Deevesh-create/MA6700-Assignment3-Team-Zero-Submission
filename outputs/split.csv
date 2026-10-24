@@ -1,0 +1,1454 @@
+split,label,sample_name
+train,Neurology,CT Head - 3
+train,Ophthalmology,Ophthalmology Progress Note - 2
+train,Cardiovascular / Pulmonary,Angina
+train,Cardiovascular / Pulmonary,Chest Tube Insertion in ER
+train,General Medicine,Discharge Summary - 19
+train,Cardiovascular / Pulmonary,Central Line Placement
+train,Cardiovascular / Pulmonary,Angiography & Catheterization
+train,Obstetrics / Gynecology,Delivery Note - 6
+train,Ophthalmology,Intraocular Lens Implant
+train,Gastroenterology,Esophagoscopy & Foreign Body Removal - 1
+train,Orthopedic,Ankle Pain - Consult
+train,Urology,Penile Discharge
+train,General Medicine,Consult - Syncope
+train,Neurology,SOAP - Numbness & Tingling
+train,Cardiovascular / Pulmonary,Cardiac Catheterization - 5
+train,General Medicine,Gen Med Consult - 5
+train,Orthopedic,Diskectomy & Fusion
+train,Urology,Prostate Adenocarcinoma
+train,ENT - Otolaryngology,Septoplasty & Turbinectomy
+train,Cardiovascular / Pulmonary,Bronchiolitis - 2-month-old
+train,Orthopedic,Extensor Tendon Repair
+train,Orthopedic,Osteoarthritis - Progress Note
+train,Urology,Cystoprostatectomy
+train,General Medicine,Trouble Breathing - H&P
+train,General Medicine,Discharge Summary - 14
+train,Neurology,EEG Monitoring Study
+train,Urology,Prostatectomy - Nerve Sparing
+train,Orthopedic,Carpal Tunnel Release - 5
+train,Urology,Circumcision - 6
+train,Obstetrics / Gynecology,Dilatation & Curettage - D&C
+train,Cardiovascular / Pulmonary,Consult - Atrial Fibrillation
+train,Orthopedic,Arthroscopic Rotator Cuff Repair - 1
+train,Cardiovascular / Pulmonary,Thoracotomy & Lobectomy
+train,Orthopedic,Leg Pain - Progress Note
+train,Gastroenterology,Esophagogastroduodenoscopy with Biopsies - 1
+train,Neurology,Multiple Meningiomas
+train,Neurology,Epidural Fluid Collection
+train,Cardiovascular / Pulmonary,Myocardial Perfusion Imaging - 1
+train,Neurology,Limbic Encephalitis
+train,Urology,Inguinal Hernia Repair - 4
+train,Cardiovascular / Pulmonary,Angiogram & StarClose Closure
+train,Cardiovascular / Pulmonary,Bronchoscopy - 7
+train,Neurology,Neurologic Consultation - 2
+train,Cardiovascular / Pulmonary,Cardiac Consultation - 5
+train,Orthopedic,Antibiotic-Impregnated Beads Placement
+train,ENT - Otolaryngology,Adenoidectomy & Tonsillectomy & Lingual Frenulectomy
+train,Cardiovascular / Pulmonary,Mitral Valve Repair & Annuloplasty
+train,Orthopedic,Knee Arthroscopy
+train,General Medicine,Male Exam & ROS
+train,General Medicine,Gen Med Consult - 23
+train,Urology,Meatoplasty Template
+train,Obstetrics / Gynecology,D&C & Hysteroscopy
+train,General Medicine,Gen Med Progress Note - 13
+train,Gastroenterology,Status Post Liver Transplant
+train,Orthopedic,Cemented Arthroplasty
+train,Neurology,Chest CT - Myasthenia Gravis
+train,Neurology,MRI Brain: Thalamic Infarct
+train,Cardiovascular / Pulmonary,Stenting
+train,Obstetrics / Gynecology,TAH & Salpingo-oophorectomy
+train,Cardiovascular / Pulmonary,Ventricular Ectopy - Consult
+train,Orthopedic,MRI Shoulder - 4
+train,Urology,"Spermatocelectomy, Epididymectomy, & Vasectomy"
+train,Orthopedic,Flexor Carpi Radialis & Palmaris Longus Repair
+train,Obstetrics / Gynecology,Ultrasound OB - 1
+train,Urology,Orchiopexy - Bilateral
+train,Neurology,Neurologic Consultation - 4
+train,Urology,Laparoscopic Orchiopexy
+train,Urology,Prostatectomy - Radical Retropubic
+train,Orthopedic,Diagnostic Arthroscopy
+train,Cardiovascular / Pulmonary,Cardiac Catheterization - 10
+train,Cardiovascular / Pulmonary,Pulmonary Edema - Consult
+train,Cardiovascular / Pulmonary,Fiberoptic Bronchoscopy with Lavage
+train,Cardiovascular / Pulmonary,"Heart Catheterization, Ventriculography, & Angiography - 12"
+train,Obstetrics / Gynecology,Ultrasound OB - 7
+train,Gastroenterology,Colostomy Failure
+train,Gastroenterology,Esophagogastroduodenoscopy - 6
+train,Gastroenterology,Wound Check - Status Post APR
+train,Cardiovascular / Pulmonary,"Heart Catheterization, Ventriculography, & Angiography - 10"
+train,Cardiovascular / Pulmonary,Cardioversion - Direct Current
+train,Gastroenterology,Cholecystectomy Laparoscopic
+train,Obstetrics / Gynecology,Intrauterine Pregnancy - Discharge Summary
+train,Obstetrics / Gynecology,Low-Transverse C-Section & BTL - 1
+train,Orthopedic,Ortho - Letter - 1
+train,Orthopedic,Knee Replacement
+train,Gastroenterology,Upper Endoscopy
+train,Obstetrics / Gynecology,Laparoscopy - 4
+train,Cardiovascular / Pulmonary,Toronto Porcine Valve Insertion
+train,Cardiovascular / Pulmonary,Tracheostomy & SCOOP Procedure
+train,Neurology,Consult - Normal Pressure Hydrocephalus
+train,Cardiovascular / Pulmonary,Lung Biopsy Discussion
+train,General Medicine,Discharge Summary - 15
+train,Ophthalmology,Lid Laceration Repair
+train,Cardiovascular / Pulmonary,Lobectomy & Lymph Node Dissection
+train,General Medicine,Gen Med Consult - 15
+train,General Medicine,Gen Med Consult - 9
+train,Cardiovascular / Pulmonary,Duplex Ultrasound - Legs
+train,Orthopedic,Orthopedic Consult - 3
+train,Orthopedic,Achilles Tendon Repair
+train,Urology,Hypospadias Repair
+train,Orthopedic,Trigger Thumb Release
+train,ENT - Otolaryngology,Exudative Tonsillitis
+train,ENT - Otolaryngology,Uvulopalatopharyngoplasty & Tonsillectomy
+train,General Medicine,Gen Med Progress Note - 5
+train,Ophthalmology,Cataract Extraction - 1
+train,Urology,Discharge Summary - Urology
+train,Cardiovascular / Pulmonary,Cardiac Consultation - 2
+train,Gastroenterology,Esophagogastroduodenoscopy - 5
+train,Urology,Vasectomy - 2
+train,Ophthalmology,Vitrectomy - 2
+train,ENT - Otolaryngology,Myringotomy/Tube Insertion
+train,Gastroenterology,EGD - 1
+train,Ophthalmology,Connective Tissue Disorder
+train,Orthopedic,Trigger Finger Release
+train,Cardiovascular / Pulmonary,COPD & Bronchitis - Discharge Summary
+train,Cardiovascular / Pulmonary,Ultrasound - Carotid - 2
+train,Gastroenterology,Postop Transanal Excision
+train,ENT - Otolaryngology,Consult - Pulsatile Tinnitus
+train,Orthopedic,Hand Pain - Consult
+train,Cardiovascular / Pulmonary,"Heart Catheterization, Ventriculography, & Angiography - 5"
+train,Cardiovascular / Pulmonary,Cardiac Catheterization - 9
+train,Gastroenterology,Esophagogastroduodenoscopy - 12
+train,Orthopedic,Pinning - Ulna
+train,Ophthalmology,Blepharoplasty - Direct Brow Repair
+train,Orthopedic,Knee Arthroplasty
+train,General Medicine,Discharge Summary - 12
+train,Neurology,Neurologic Examination
+train,Orthopedic,ORIF - Followup
+train,Obstetrics / Gynecology,Radical Vulvectomy
+train,Cardiovascular / Pulmonary,Chest Pain - Cardiac Consult
+train,Urology,Prostate Adenocarcinoma - 2
+train,General Medicine,H&P - Weakness
+train,Orthopedic,ORIF - 1
+train,Ophthalmology,Phacoemulsification Of Cataract - 2
+train,Cardiovascular / Pulmonary,Cardiac Consultation - 7
+train,Cardiovascular / Pulmonary,Coronary CT Angiography (CCTA) - 4
+train,General Medicine,Right Hand Laceration
+train,Neurology,"SAH, Contusion, Skull Fracture"
+train,Orthopedic,Carpal Ligament Release - 2
+train,Cardiovascular / Pulmonary,Pulmonary Consultation - 2
+train,Gastroenterology,Flex Sig - 3
+train,Gastroenterology,Colonoscopy - 15
+train,Neurology,Neurology - Discharge Summary
+train,Neurology,CT Head - 1
+train,Cardiovascular / Pulmonary,Pacemaker (Dual Chamber) - 1
+train,General Medicine,Female Physical Exam - 2
+train,General Medicine,Antibiotic Therapy Consult
+train,Cardiovascular / Pulmonary,CABG - Redo
+train,Obstetrics / Gynecology,Spontaneous Vaginal Delivery
+train,Orthopedic,Diskectomy
+train,General Medicine,Female Physical Exam - 1
+train,Neurology,Cerebral Angiogram - Left ICA/PCA Aneurysm
+train,Urology,Inguinal Herniorrhaphy - 1
+train,ENT - Otolaryngology,Laryngoscopy & Vocal Cord Biopsy
+train,Orthopedic,Meniscoplasty & Chondroplasty
+train,General Medicine,Chest Wall Lump - Consult
+train,Urology,Inguinal Herniorrhaphy
+train,Orthopedic,Debridement - Shoulder
+train,Gastroenterology,Paracentesis - Ultrasound-Guided
+train,Urology,Bladder Cancer
+train,Orthopedic,Long-Arm Cast
+train,Cardiovascular / Pulmonary,Cardiac Consultation - 4
+train,Urology,Ultrasound Scrotum
+train,Gastroenterology,Colonoscopy with Biopsy - 2
+train,Gastroenterology,Colonoscopy - 16
+train,Gastroenterology,Pancreatic Mass - Discharge Summary
+train,Orthopedic,Arthroscopic Rotator Cuff Repair
+train,Urology,Bladder Biopsies & Fulguration
+train,ENT - Otolaryngology,Adenotonsillectomy
+train,Cardiovascular / Pulmonary,Heart Catheterization & Ventriculogram
+train,Cardiovascular / Pulmonary,Biventricular Cardioverter Defibrillator Implantation
+train,Orthopedic,Arthrotomy & I&D
+train,Cardiovascular / Pulmonary,2-D Echocardiogram - 3
+train,Gastroenterology,Laparoscopic Cholecystectomy - 2
+train,Ophthalmology,Phacoemulsification & Cataract Extraction - 4
+train,Gastroenterology,Colonoscopy & Esophagogastroduodenoscopy
+train,Urology,Foreskin - Followup
+train,Urology,Penile Cellulitis
+train,Urology,Cystoscopy
+train,Urology,Paraphimosis
+train,Gastroenterology,Deglutition Study - Modified Barium swallow
+train,Urology,Bilateral Vasovasostomy
+train,Gastroenterology,Barium Swallow Study Evaluation - 1
+train,Cardiovascular / Pulmonary,Pulmonary - Followup Note
+train,Ophthalmology,Cataract Extraction
+train,Orthopedic,MRI Knee - 4
+train,ENT - Otolaryngology,Sinus Surgery - Endoscopic
+train,Cardiovascular / Pulmonary,Elevated BNP - Consult
+train,Neurology,Head Trauma
+train,Obstetrics / Gynecology,Hysterectomy - Discharge Summary - 1
+train,Cardiovascular / Pulmonary,Lobectomy - Followup
+train,ENT - Otolaryngology,Nasal Septal Reconstruction
+train,Gastroenterology,Cholecystectomy & Cholangiogram.
+train,Cardiovascular / Pulmonary,Carotid & Cerebral Arteriograms
+train,General Medicine,Gen Med SOAP - 9
+train,Orthopedic,Orthopedic Consult - 2
+train,Orthopedic,Pinning - Hip
+train,Urology,Pyeloureteroscopy
+train,Neurology,Arachnoid Cyst
+train,Orthopedic,Anterior Cruciate Ligament Reconstruction
+train,Orthopedic,Closed Reduction - 1
+train,Orthopedic,Carpal Tunnel Release - Open
+train,Orthopedic,Ulnar Nerve Decompression
+train,Cardiovascular / Pulmonary,Chest Tube Insertion
+train,Ophthalmology,Scleral Buckle Opening - Local Anesthesia
+train,General Medicine,Normal Male Exam Template - 1
+train,Orthopedic,Carpal Tunnel Release - 9
+train,General Medicine,Gen Med Consult - 40
+train,Neurology,Carotid Ultrasound
+train,Urology,Prostate Adenocarcinoma - 4
+train,Orthopedic,Olecranon Bursa - Excision
+train,Cardiovascular / Pulmonary,Bronchoscopy & Lobectomy
+train,Cardiovascular / Pulmonary,Bronchoscopy & Foreign Body Removal
+train,Orthopedic,Total Hip Replacement
+train,Orthopedic,Vertebroplasty
+train,Obstetrics / Gynecology,Diagnostic Mammogram
+train,Neurology,Consult - Migraine
+train,Cardiovascular / Pulmonary,Pacemaker (Dual Chamber)
+train,Gastroenterology,Colonoscopy with Biopsy - 4
+train,Orthopedic,Youngswick Bunionectomy
+train,Orthopedic,Carpal Tunnel Release - 3
+train,Orthopedic,Hamstring Release
+train,Cardiovascular / Pulmonary,Cardiac Catheterization - 11
+train,Ophthalmology,Ophthalmology - Letter - 2
+train,Orthopedic,Subperiosteal Abscess Debridement
+train,Cardiovascular / Pulmonary,CyberKnife Treatment - Followup
+train,Urology,Vasectomy - 4
+train,General Medicine,Discharge Summary - Migraine
+train,Urology,Cystourethroscopy & TURP
+train,ENT - Otolaryngology,Sinus problems - Consult
+train,Cardiovascular / Pulmonary,CT Chest - 1
+train,Neurology,Consult - Cerebral Peduncle Infarction
+train,Obstetrics / Gynecology,Ultrasound - Transvaginal
+train,Cardiovascular / Pulmonary,Bronchoscopy - 4
+train,General Medicine,Gen Med Consult - 30
+train,Urology,Penile Prosthesis Replacement
+train,Neurology,CT Scan of Brain with Contrast
+train,General Medicine,Gen Med Consult - 50
+train,Ophthalmology,Ophthalmology - Letter - 4
+train,Urology,Transurethral Resection Of Bladder Tumor
+train,Gastroenterology,Barium Swallow Study Evaluation
+train,Orthopedic,Total Knee Replacement
+train,Gastroenterology,Esophagogastroduodenoscopy - 3
+train,Cardiovascular / Pulmonary,Pacemaker (Single Chamber) - 1
+train,General Medicine,Discharge Summary - 1
+train,Cardiovascular / Pulmonary,Cardiomyopathy & Hypotension - Consult
+train,Cardiovascular / Pulmonary,Coronary CT Angiography (CCTA) - 5
+train,Orthopedic,Orthopedic Consult - 1
+train,General Medicine,Post Thyroidectomy - Discharge Summary
+train,Cardiovascular / Pulmonary,2-D Echocardiogram - 1
+train,Cardiovascular / Pulmonary,CT of Chest with Contrast
+train,Cardiovascular / Pulmonary,Exercise Stress Test - 2
+train,Orthopedic,de Quervain Release - Wrist
+train,Obstetrics / Gynecology,Emergency C-section.
+train,Gastroenterology,Esophagogastroduodenoscopy - 11
+train,General Medicine,Pressure decubitus
+train,Cardiovascular / Pulmonary,Consult - Palpitations & Presyncope
+train,Ophthalmology,Radioactive Plaque - Insertion
+train,Cardiovascular / Pulmonary,CABG
+train,ENT - Otolaryngology,Adenoidectomy - 1
+train,Cardiovascular / Pulmonary,Dobutamine Stress Test
+train,Neurology,CT Brain - Calcification of Basal Ganglia
+train,Cardiovascular / Pulmonary,Cardiac Catheterization - 3
+train,Gastroenterology,Clostridium Difficile Colitis Followup
+train,Urology,Microhematuria - Consult
+train,General Medicine,Normal Female Exam Template - 2
+train,Cardiovascular / Pulmonary,Thrombectomy AV Shunt
+train,General Medicine,Gen Med Consult - 43
+train,Gastroenterology,Esophagogastroduodenoscopy - 1
+train,Cardiovascular / Pulmonary,Myoview Perfusion Scan
+train,General Medicine,Gen Med SOAP - 3
+train,General Medicine,Discharge Summary - 16
+train,Cardiovascular / Pulmonary,Tracheostomy
+train,Obstetrics / Gynecology,Salpingectomy & Cervical Dilatation
+train,Gastroenterology,Ischemic Cecum - Consult
+train,Cardiovascular / Pulmonary,Cardiac Transfer Summary
+train,Neurology,Bell's Palsy
+train,General Medicine,Gen Med Consult - 46
+train,Gastroenterology,Ischial Ulcer Debridement
+train,Cardiovascular / Pulmonary,Pulmonary Valve Stenosis
+train,Urology,Prostatectomy
+train,Obstetrics / Gynecology,TAH & BSO
+train,Obstetrics / Gynecology,Pre-Eclampsia & Eclampsia
+train,Cardiovascular / Pulmonary,Pulmonary Function Test - 5
+train,Orthopedic,Shoulder Hemi-resurfacing
+train,Cardiovascular / Pulmonary,"Heart Catheterization, Ventriculography, & Angiography - 6"
+train,Obstetrics / Gynecology,Lysis of Pelvic Adhesions
+train,Orthopedic,Total Knee Replacement - NexGen
+train,Gastroenterology,Laparoscopic Appendectomy - 1
+train,Cardiovascular / Pulmonary,VVIR Permanent Pacemaker Insertion
+train,Orthopedic,Arthroscopy - Glenoid Labrum
+train,General Medicine,Discharge Summary - 17
+train,Neurology,Huntington's Disease
+train,Ophthalmology,Post Dilation Instructions
+train,Neurology,CT Brain - Hemangioma
+train,Obstetrics / Gynecology,Biophysical Profile - 1
+train,Gastroenterology,Colonoscopy & Polypectomy - 2
+train,Orthopedic,Rotator cuff syndrome - H&P
+train,Neurology,HCT - Pituitary Mass
+train,Cardiovascular / Pulmonary,Bronchiolitis - Discharge Summary
+train,ENT - Otolaryngology,Progress Note - Supraglottitis
+train,Cardiovascular / Pulmonary,Transesophageal Echocardiogram - 2
+train,ENT - Otolaryngology,Cleft Repair
+train,Orthopedic,Arthroscopy & Chondroplasty
+train,Orthopedic,Lumbar Discectomy - Microscopic
+train,Obstetrics / Gynecology,Low-Transverse C-Section - 6
+train,Orthopedic,Austin-Akin Bunionectomy
+train,Obstetrics / Gynecology,Repeat C-section
+train,General Medicine,Ant Bait Exposure - ER Visit
+train,Obstetrics / Gynecology,Induction of Vaginal Delivery
+train,General Medicine,Foreign Body - Fingernail
+train,Obstetrics / Gynecology,OB/GYN Consultation - 2
+train,Ophthalmology,Phacoemulsification & Cataract Extraction - 2
+train,Gastroenterology,Appendectomy Laparoscopic
+train,General Medicine,Discharge Summary - 11
+train,Cardiovascular / Pulmonary,Non-Q-wave Myocardial Infarction
+train,Gastroenterology,Lap Chole - Discharge Summary
+train,General Medicine,Normal Physical Exam Template - 4
+train,Urology,TURBT
+train,Urology,Cystourethroscopy & TURP - 1
+train,Cardiovascular / Pulmonary,Pacemaker Interrogation
+train,ENT - Otolaryngology,Fat Harvesting
+train,Cardiovascular / Pulmonary,Flexible Fiberoptic Bronchoscopy
+train,General Medicine,Insect Sting
+train,Orthopedic,Release of A1 Pulley - 1
+train,ENT - Otolaryngology,Endoscopic Sinus Surgery
+train,Cardiovascular / Pulmonary,Transesophageal Echocardiogram
+train,Gastroenterology,Consult for Colostomy Reversal
+train,Gastroenterology,Colonoscopy - 17
+train,Ophthalmology,Phacoemulsification & Lens Implantation - 6
+train,Obstetrics / Gynecology,Delivery Note
+train,Ophthalmology,Phacoemulsification & Cataract Extraction
+train,Cardiovascular / Pulmonary,Holter Monitoring
+train,Obstetrics / Gynecology,Low -Segment C-Section
+train,Ophthalmology,Ophthalmology Progress Note - 1
+train,Neurology,MRI Brain - Thrombus
+train,Orthopedic,Lumbar Spine HNP - Consult
+train,Obstetrics / Gynecology,"D&C, Laparoscopy, & Salpingectomy"
+train,ENT - Otolaryngology,Control of Parapharyngeal Hemorrhage
+train,Neurology,Hydrocephalus
+train,General Medicine,Gen Med Consult - 51
+train,Obstetrics / Gynecology,Biophysical Profile
+train,ENT - Otolaryngology,Consult - Enlarged Tonsils
+train,Gastroenterology,Gastroenterology - Letter
+train,Cardiovascular / Pulmonary,Aortogram - Leg claudication.
+train,Gastroenterology,Laparoscopic Cholecystectomy - 9
+train,Neurology,Intracranial aneurysm - ER Visit
+train,General Medicine,Gen Med SOAP - 11
+train,Neurology,Feet & Hand Cramping
+train,Orthopedic,MRI Shoulder - 5
+train,Obstetrics / Gynecology,OB/GYN - H&P
+train,Obstetrics / Gynecology,Physical Exam and Pap -2
+train,General Medicine,Ecstasy Ingestion - ER Visit
+train,Ophthalmology,Cataract Extraction & Vitrectomy
+train,General Medicine,Discharge Summary - Multiple Trauma
+train,General Medicine,Not Feeling Well - ER Visit
+train,Cardiovascular / Pulmonary,Exercise Stress Test - 4
+train,Neurology,Dizziness - Recurrent
+train,General Medicine,Gen Med SOAP - 7
+train,Obstetrics / Gynecology,Hysteroscopy & Endometrial Ablation
+train,Orthopedic,Consult - Knee Pain
+train,Orthopedic,Total Knee Arthroplasty - Right
+train,General Medicine,Gen Med Consult - 3
+train,Urology,Bladder Laceration Closure
+train,Urology,Orchiopexy & Hernia Repair
+train,Orthopedic,Carpal Tunnel Release - 2
+train,Obstetrics / Gynecology,Breast Ultrasound & Biopsy
+train,Orthopedic,Closing Wedge Osteotomy
+train,Orthopedic,Carpal Ligament Reconstruction
+train,General Medicine,Discharge Summary - 2
+train,Neurology,Comprehensive Neurological Evaluation
+train,Orthopedic,MRI Shoulder - 2
+train,Urology,Cavernosaphenous Shunt - Priapism
+train,Cardiovascular / Pulmonary,Coronary CT Angiography (CCTA) - 2
+train,Cardiovascular / Pulmonary,Thoracentesis
+train,Orthopedic,Carpal Tunnel Release
+train,Gastroenterology,ERCP
+train,Orthopedic,MRI Knee - 3
+train,Cardiovascular / Pulmonary,Treadmill Test
+train,Gastroenterology,Progress Note - Liver Cirrhosis
+train,Orthopedic,Bunionectomy & Arthrodesis
+train,General Medicine,Perioperative Elevated Blood Pressure
+train,Ophthalmology,Phacoemulsification - Kelman
+train,Urology,Cystoscopy & Visual Urethrotomy
+train,Gastroenterology,Colonoscopy - 13
+train,Cardiovascular / Pulmonary,Shiley Tracheostomy Tube Insertion
+train,General Medicine,Gen Med Consult - 39
+train,Obstetrics / Gynecology,Vaginal Hysterectomy - Laparoscopic-Assisted
+train,Obstetrics / Gynecology,Three-Week Postpartum Checkup
+train,Cardiovascular / Pulmonary,CABG - 2
+train,Neurology,Neuro Consult - Depression & Dementia
+train,Neurology,Impairment Rating
+train,Obstetrics / Gynecology,D&C & Hysteroscopy - 1
+train,ENT - Otolaryngology,Cleft Repair - Soft Palate
+train,Ophthalmology,Vitrectomy - Local Anesthesia
+train,Urology,Left Orchiectomy & Right Orchidopexy
+train,Ophthalmology,Ophthalmology - Letter - 1
+train,Cardiovascular / Pulmonary,Bronchoscopy & Bronchoalveolar Lavage
+train,Gastroenterology,Discharge Summary - 10
+train,ENT - Otolaryngology,Tonsillectomy & Adenoidectomy - 4
+train,Obstetrics / Gynecology,Delivery Note - 5
+train,Cardiovascular / Pulmonary,Cardiac Consultation
+train,General Medicine,Normal ROS Template - 1
+train,Obstetrics / Gynecology,Cone Biopsy
+train,Cardiovascular / Pulmonary,Preop Cardiac Consult
+train,Orthopedic,Kyphosis
+train,ENT - Otolaryngology,Ear Cartilage Graft
+train,Gastroenterology,Esophagogastroduodenoscopy - 10
+train,Cardiovascular / Pulmonary,CABG - 1
+train,Urology,Urinary Retention - Followup
+train,Cardiovascular / Pulmonary,Hypertension - Progress Note
+train,Ophthalmology,YAG Laser Capsulotomy
+train,General Medicine,Gen Med Progress Note - 12
+train,Ophthalmology,Repair of Canthal & Lid Defect
+train,Obstetrics / Gynecology,Tubal Ligation - Postpartum
+train,Urology,TURBT - 1
+train,ENT - Otolaryngology,Myringotomy/Tube Insertion - 1
+train,General Medicine,Gen Med Office Note - 1
+train,Obstetrics / Gynecology,First Pap smear.
+train,Urology,Inguinal Hernia Repair - 5
+train,Gastroenterology,Gastroenteritis - Discharge Summary
+train,Gastroenterology,Appendectomy - 1
+train,Obstetrics / Gynecology,Spontaneous Vaginal Delivery - 1
+train,Cardiovascular / Pulmonary,Consult - Congestive Heart Failure
+train,Obstetrics / Gynecology,Delivery Note - 9
+train,Ophthalmology,Uveitis
+train,Gastroenterology,Colonoscopy Template - 4
+train,General Medicine,Gen Med Progress Note - 2
+train,Cardiovascular / Pulmonary,Pacemaker - DDDR
+train,Urology,Urinary Frequency & Urgency - Followup
+train,Cardiovascular / Pulmonary,Sick Sinus Syndrome
+train,Cardiovascular / Pulmonary,Echocardiogram - 1
+train,ENT - Otolaryngology,BMT - Bilateral Myringotomy Tubes
+train,Obstetrics / Gynecology,Hysteroscopy & Laproscopy with Salpingooophorectomy
+train,General Medicine,Hypersensitivity to Coumadin
+train,Cardiovascular / Pulmonary,Pneumothorax & Subcutaneous Emphysema
+train,Neurology,CT Scan of  Brain w/o Contrast
+train,Urology,Cystolithalopaxy
+train,Cardiovascular / Pulmonary,Holter Monitor Report - 2
+train,Orthopedic,Tissue Expander Insertion
+train,General Medicine,Detox from Heroin
+train,Neurology,MRI Brain - Lyme Disease
+train,Obstetrics / Gynecology,Ultrasound OB - 5
+train,Urology,Inguinal Herniorrhaphy & Circumcision
+train,Ophthalmology,Blepharoplasty - Lower Lid
+train,Urology,Circumcision & Chordee Release
+train,Gastroenterology,Surgical Closure of Gastrostomy
+train,Gastroenterology,PEG Tube
+train,Gastroenterology,Esophagogastroduodenoscopy
+train,Obstetrics / Gynecology,"Suction, Dilation, & Curettage - 1"
+train,Orthopedic,ORIF - Discharge Summary
+train,Cardiovascular / Pulmonary,CT Angiography - 1
+train,Cardiovascular / Pulmonary,Subclavian Central Venous Catheter Insertion
+train,Cardiovascular / Pulmonary,IV Procainamide Infusion
+train,Cardiovascular / Pulmonary,Saphenous Vein - Ligation & Stripping
+train,Ophthalmology,YAG Laser Capsulotomy - 1
+train,Orthopedic,Bilateral Hip Pain
+train,Neurology,Granulomatous Inflammation
+train,Gastroenterology,Open Cholecystectomy
+train,Obstetrics / Gynecology,Well-woman checkup
+train,General Medicine,Gen Med Progress Note - 4
+train,Cardiovascular / Pulmonary,Mediastinal Exploration & Right Atrium Repair
+train,Obstetrics / Gynecology,OB/GYN Consultation - 3
+train,Gastroenterology,Appendectomy
+train,Cardiovascular / Pulmonary,Hickman Central Venous Catheter Placement
+train,Cardiovascular / Pulmonary,Cardioversion
+train,General Medicine,Nausea & Vomiting - ER Visit
+train,Gastroenterology,Flex Sig
+train,Cardiovascular / Pulmonary,Tesio Hemodialysis Catheter Insertion
+train,Orthopedic,Carpal Tunnel Release - 8
+train,Gastroenterology,Lower Quadrant Pain
+train,General Medicine,Consult - Stasis Ulcer
+train,General Medicine,Normal Physical Exam Template - 3
+train,General Medicine,Gen Med Consult - 41
+train,Cardiovascular / Pulmonary,Chest Tube Placement
+train,Urology,Bladder Tumor
+train,General Medicine,Gen Med Consult - 31
+train,Orthopedic,Orthopedic Consult - 4
+train,Cardiovascular / Pulmonary,H&P - Cardio (Angina)
+train,Gastroenterology,Colonoscopy with Biopsy - 1
+train,Gastroenterology,Laparoscopic Cholecystectomy & Cholangiogram
+train,Neurology,Lumbosacral Polyradiculopathy
+train,Gastroenterology,SOAP - Cholecystitis
+train,Urology,Hydrocelectomy
+train,Neurology,Myoclonic Epilepsy
+train,Orthopedic,Knee Arthroscopy - 1
+train,Cardiovascular / Pulmonary,Port-A-Cath Insertion
+train,Gastroenterology,Laparoscopy & Laparoscopic Appendectomy
+train,Gastroenterology,Esophagogastroduodenoscopy - 7
+train,Neurology,MRI Brain - Cryptococcus
+train,Gastroenterology,Esophagogastroduodenoscopy - 2
+train,General Medicine,ER Report - URI
+train,General Medicine,Gen Med Consult - 19
+train,Cardiovascular / Pulmonary,Cardiology - Letter
+train,Ophthalmology,Clear Corneal Temporal Incision
+train,General Medicine,Consult - Vomiting & Nausea
+train,Cardiovascular / Pulmonary,Bronchoalveolar lavage.
+train,Gastroenterology,Colonoscopy - 21
+train,Obstetrics / Gynecology,Low-Transverse C-Section - 2
+train,Neurology,Intractable Epilepsy
+train,Cardiovascular / Pulmonary,Lightheaded & Dizziness
+train,Neurology,CT Brain - Aneurysm
+train,Urology,Cystoscopy & Bladder Biopsy
+train,Cardiovascular / Pulmonary,Exercise Stress Test
+train,Cardiovascular / Pulmonary,Lobectomy & Lymphadenectomy
+train,Neurology,CT Brain: Subdural hematoma
+train,Orthopedic,Knee Injury
+train,General Medicine,Feeling Dizzy - ER Visit
+train,Cardiovascular / Pulmonary,"Heart Catheterization, Ventriculography, & Angiography"
+train,Gastroenterology,Colonoscopy & Polypectomy - 3
+train,General Medicine,Gen Med Consult - 17
+train,Obstetrics / Gynecology,Tubal Sterilization & Coagulation
+train,Obstetrics / Gynecology,Low-Transverse C-Section - 9
+train,Orthopedic,Dorsal Ganglion - Excision
+train,Orthopedic,Knee Arthroplasty - Discharge Summary
+train,Cardiovascular / Pulmonary,Pulmonary Function Test - 4
+train,General Medicine,Gen Med Consult - 44
+train,Cardiovascular / Pulmonary,Metastasectomy & Bronchoscopy
+train,Cardiovascular / Pulmonary,Transthoracic Echocardiography
+train,General Medicine,Discharge Summary - 4
+train,Urology,Flexible Cystoscopy - BPH
+train,Cardiovascular / Pulmonary,Pneumonia & COPD - Discharge Summary
+train,Cardiovascular / Pulmonary,Cineangiography
+train,Urology,Testicular Pain
+train,Cardiovascular / Pulmonary,Supraclavicular Lymphadenopathy
+train,Gastroenterology,Dysphagia & Hematemesis
+train,Cardiovascular / Pulmonary,Echocardiogram - 2
+train,Cardiovascular / Pulmonary,Telemetry Monitoring
+train,ENT - Otolaryngology,Septoplasty
+train,Cardiovascular / Pulmonary,Endotracheal Intubation - 1
+train,General Medicine,Normal Physical Exam Template - 5
+train,Orthopedic,Intramedullary Nail Fixation
+train,Urology,Inguinal Hernia Repair
+train,Gastroenterology,Cholecystectomy - Open
+train,Obstetrics / Gynecology,Hysterectomy & Salpingoophorectomy
+train,General Medicine,Gen Med Progress Note
+train,Cardiovascular / Pulmonary,Bilateral Carotid Angiography
+train,Cardiovascular / Pulmonary,Cardiology Progress Note
+train,Gastroenterology,Stamm Gastrostomy Tube Placement
+train,General Medicine,Gen Med Consult - 8
+train,Neurology,Arm Pain - Neuro Consult
+train,Gastroenterology,Appendectomy - Laparoscopic
+train,Cardiovascular / Pulmonary,2-D Echocardiogram - 2
+train,Cardiovascular / Pulmonary,Central Line Insertion
+train,Urology,Electrofulguration - Bladder Tumor
+train,Cardiovascular / Pulmonary,Chest Tube Removal
+train,ENT - Otolaryngology,Tonsillectomy & Adenoidectomy
+train,Urology,Cystoscopy & TURP
+train,ENT - Otolaryngology,Adenotonsillectomy - 1
+train,Cardiovascular / Pulmonary,Cardiac Catheterization
+train,Orthopedic,Kyphoplasty - Consult
+train,Cardiovascular / Pulmonary,Carotid Endarterectomy & Angioplasty.
+train,Gastroenterology,Constipation - 1
+train,Urology,Orchiopexy & Herniorrhaphy - 1
+train,Neurology,MRI Brain - Memory Loss
+train,Cardiovascular / Pulmonary,Pulmonary Medicine Clinic Followup
+train,Orthopedic,Carpal Tunnel Release - 6
+train,General Medicine,Cut on Foot - ER Visit
+train,Cardiovascular / Pulmonary,Tessio Catheter Insertion
+train,Obstetrics / Gynecology,Consult/ER Report - OB/GYN
+train,Neurology,Creutzfeldt-Jakob Disease
+train,Neurology,Malignant Meningioma - Consult
+train,Cardiovascular / Pulmonary,Carotid Doppler Report
+train,Obstetrics / Gynecology,Cesarean Section & BTL
+train,General Medicine,Gen Med Progress Note - 8
+train,Gastroenterology,Cecal Polyp Resection
+train,Cardiovascular / Pulmonary,CAD - 6-Month Followup
+train,General Medicine,Nausea - ER Visit
+train,General Medicine,Gen Med Consult - 37
+train,Gastroenterology,Colonoscopy - 14
+train,Obstetrics / Gynecology,Fetal Anatomical Survey
+train,Orthopedic,Orthopedic Consult
+train,Obstetrics / Gynecology,D&C & Laparoscopy - 2
+train,Cardiovascular / Pulmonary,Echocardiography
+train,Orthopedic,Five views of the right knee.
+train,General Medicine,Consult - Chest Pain
+train,Gastroenterology,Abscess Excision
+train,General Medicine,Gen Med Consult - 18
+train,ENT - Otolaryngology,Adenoidectomy
+train,Urology,Inguinal Hernia Repair - 1
+train,General Medicine,Gen Med Consult - 54
+train,ENT - Otolaryngology,Cauterization - Epistaxis
+train,Cardiovascular / Pulmonary,Ash Split Venous Port
+train,Neurology,Tethered Cord Evaluation
+train,Gastroenterology,Cholecystostomy Tube Placement
+train,Gastroenterology,Cholecystitis - Discharge Summary
+train,Obstetrics / Gynecology,Hysterectomy - Discharge Summary - 2
+train,Gastroenterology,Ttriple-Lumen Central Line
+train,Cardiovascular / Pulmonary,ER Report - Chest Pain
+train,Cardiovascular / Pulmonary,"Heart Catheterization, Ventriculography, & Angiography - 3"
+train,Cardiovascular / Pulmonary,Pleurodesis
+train,Obstetrics / Gynecology,Laparoscopy - 3
+train,Neurology,Arnold Chiari II with Syrinx
+train,ENT - Otolaryngology,Bilateral Myringotomies - 1
+train,Obstetrics / Gynecology,Delivery Note - 2
+train,Obstetrics / Gynecology,Uterine Suction Curettage
+train,Neurology,MRI Brain -  Meningioma (Olfactory)
+train,Gastroenterology,Laparoscopic Cholecystectomy - 10
+train,ENT - Otolaryngology,Ear Examination
+train,Cardiovascular / Pulmonary,Transesophageal Echocardiogram - 4
+train,Obstetrics / Gynecology,Radical Mastectomy - 1
+train,Orthopedic,Pilon Fracture External Fixation
+train,Gastroenterology,"Laparoscopy, Laparotomy, & Cholecystectomy"
+train,Cardiovascular / Pulmonary,Atrial Fibrillation - Consult
+train,Orthopedic,Achilles Ruptured Tendon
+train,Cardiovascular / Pulmonary,"Heart Catheterization, Ventriculography, & Angiography - 11"
+train,Gastroenterology,Paracentesis
+train,General Medicine,Chronic Medical Conditions - Followup
+train,General Medicine,Gen Med Consult - 26
+train,Cardiovascular / Pulmonary,Patent Ductus Arteriosus
+train,ENT - Otolaryngology,Bilateral Myringotomies - 2
+train,Gastroenterology,Colonoscopy - 19
+train,Orthopedic,CT Neck - 1
+train,Urology,Orchiectomy
+train,ENT - Otolaryngology,Microsuspension Direct Laryngoscopy & Biopsy
+train,Cardiovascular / Pulmonary,Heart Catheterization - 2
+train,Obstetrics / Gynecology,Total Abdominal Hysterectomy - 2
+train,Neurology,MRI Brain - Bilateral Thalamic Strokes
+train,General Medicine,Gen Med Progress Note - 1
+train,General Medicine,Airway Compromise & Foreign Body - ER Visit
+train,General Medicine,Discharge Summary - 18
+train,Orthopedic,Condylectomy
+train,Cardiovascular / Pulmonary,Dual Chamber ICD Implantation
+train,Orthopedic,Knee Arthroplasty - Bilateral
+train,Cardiovascular / Pulmonary,Cardiac Consultation - 1
+train,General Medicine,Normal Physical Exam Template
+train,Gastroenterology,Colonoscopy with Biopsy - 3
+train,Obstetrics / Gynecology,Full-Field Digital Mammogram (FFDM) - 2
+train,Ophthalmology,Phacoemulsification of Cataract - 1
+train,Gastroenterology,EGD - Colonoscopy - Polypectomy
+train,Cardiovascular / Pulmonary,Urgent Cardiac Cath
+train,Gastroenterology,Esophagogastroduodenoscopy - 4
+train,Cardiovascular / Pulmonary,Heart Cath & Coronary Angiography
+train,Cardiovascular / Pulmonary,Tilt Table Test - 1
+train,Obstetrics / Gynecology,Delivery Note - 7
+train,Cardiovascular / Pulmonary,Single Frontal View of Chest
+train,Obstetrics / Gynecology,Ultrasound - Pelvis
+train,General Medicine,Gen Med SOAP - 6
+train,Gastroenterology,GI Consultation - 3
+train,Neurology,Consult - Seizures - 1
+train,Orthopedic,AC Separation Revision & Hardware Removal
+train,Cardiovascular / Pulmonary,Pacemaker (Single Chamber)
+train,Cardiovascular / Pulmonary,Atrial Flutter - Progress Note
+train,General Medicine,Annual Health Maintenance Exam
+train,Orthopedic,TLIF
+train,Neurology,Iliopsoas Hematoma - 1
+train,Cardiovascular / Pulmonary,"Heart Catheterization, Ventriculography, & Angiography - 9"
+train,Urology,Laser Vaporization of Prostate
+train,Gastroenterology,Esophagoscopy & Foreign Body Removal
+train,Orthopedic,Ligament Reconstruction & Tendon Interposition Arthroplasty
+train,Obstetrics / Gynecology,Vacuum D&C
+train,Orthopedic,Hip Fracture - ER Consult
+train,General Medicine,Down's syndrome
+train,Orthopedic,Arthroscopic Debridement - Shoulder
+train,Orthopedic,Transpedicular Decompression
+train,Cardiovascular / Pulmonary,DDDR Permanent Pacemaker
+train,Cardiovascular / Pulmonary,Angiography & Catheterization - 1
+train,Cardiovascular / Pulmonary,Multiple Stent Placements
+train,Orthopedic,MRI Wrist - 1
+train,Orthopedic,Discharge Summary - ATV Accident
+train,Urology,Spermatocelectomy
+train,Cardiovascular / Pulmonary,Angiogram & Angioplasty
+train,Urology,Whole Body Radionuclide Bone Scan
+train,Neurology,Astrocytoma
+train,ENT - Otolaryngology,Vertigo Consult - 1
+train,Orthopedic,Followup Screw Fixation
+train,Gastroenterology,Colonoscopy - 4
+train,Gastroenterology,Colonoscopy - 5
+train,Orthopedic,Intramedullary Rod
+train,Orthopedic,Knee DJD - Consult
+train,ENT - Otolaryngology,Myringotomy/Tube Insertion - 3
+train,Neurology,Lobar Holoprosencephaly
+train,Cardiovascular / Pulmonary,Flexible Fiberoptic Bronchoscopy -1
+train,Orthopedic,Hip Surgery - Discharge Summar
+train,Orthopedic,Tailor Bunionectomy with Screw Fixation
+train,Neurology,AVM with Hemorrhage
+train,General Medicine,Discharge Summary - 7
+train,Urology,Retrograde Pyelogram & Cystourethroscopy
+train,Cardiovascular / Pulmonary,Pulmonary Atresia
+train,Gastroenterology,Colonoscopy - 20
+train,Obstetrics / Gynecology,Hysterectomy - Laparoscopic Supracervical
+train,General Medicine,Gen Med Consult - 36
+train,Orthopedic,Trigger Thumb Release - 1
+train,Ophthalmology,Phacoemulsification of Cataract
+train,Cardiovascular / Pulmonary,Pulmonary Embolism
+train,General Medicine,Dog Bite
+train,Gastroenterology,Consult - Multiple Colon Polyps
+train,Obstetrics / Gynecology,Dilation & Evacuation
+train,Neurology,EEG
+train,Neurology,Neurologic Consultation
+train,Neurology,Brain MRI - Pituitary Adenoma
+train,Orthopedic,Arthroscopic SLAP lesion
+train,Orthopedic,Achilles Lengthening
+train,Urology,Urology Discharge Summary
+train,Gastroenterology,Colonoscopy & Polypectomy - 1
+train,Orthopedic,ORIF Wrist - Acumed Locking Plate
+train,Cardiovascular / Pulmonary,CT Angiography
+train,Orthopedic,Wrist Ganglion Excision
+train,Urology,Circumcision - 7
+train,ENT - Otolaryngology,Rhinectomy & Nasal Endoscopy
+train,General Medicine,Normal ROS Template - 3
+train,Orthopedic,RICE Therapy
+train,Orthopedic,Consult - Back & Leg Pain
+train,Ophthalmology,Ruptured Globe Repair - Posterior Sclera
+train,Cardiovascular / Pulmonary,Cardiac Catheterization - 12
+train,Orthopedic,Elbow Manipulation
+train,Gastroenterology,Discharge Summary - Cholelithiasis
+train,Gastroenterology,Abdominal Exploration
+train,Obstetrics / Gynecology,Delivery Note - 8
+train,General Medicine,Normal Physical Exam Template - 1
+train,Orthopedic,ORIF - Talus
+train,ENT - Otolaryngology,Tonsillectomy - 1
+train,General Medicine,Normal Male Exam Template
+train,General Medicine,Normal Physical Exam Template - 7
+train,General Medicine,Gen Med Consult - 25
+train,General Medicine,Gen Med Consult - 22
+train,Cardiovascular / Pulmonary,Fiberoptic Bronchoscopy
+train,Urology,Circumcision Followup
+train,Urology,Elevated PSA - Chart Note
+train,Cardiovascular / Pulmonary,Tracheotomy - 1
+train,Obstetrics / Gynecology,Diagnostic Laparoscopy
+train,Orthopedic,MRI Elbow - 2
+train,General Medicine,Gen Med Consult - 49
+train,Cardiovascular / Pulmonary,Thromboendarterectomy
+train,Neurology,Meningioma
+train,Urology,Brachytherapy
+train,Ophthalmology,Vitrectomy Opening
+train,Obstetrics / Gynecology,Tubal Ligation - Laparoscopic
+train,Cardiovascular / Pulmonary,"Heart Catheterization, Ventriculography, & Angiography - 1"
+train,General Medicine,Gen Med Consult - 47
+train,Gastroenterology,Colonoscopy
+train,Obstetrics / Gynecology,OB/GYN Consultation - 1
+train,Obstetrics / Gynecology,Colpocleisis
+train,Cardiovascular / Pulmonary,Acute Inferior Myocardial Infarction
+train,Ophthalmology,Rectus Recession
+train,Orthopedic,Osteosynthesis
+train,Obstetrics / Gynecology,D&C & Tubal Pregnancy Removal
+train,ENT - Otolaryngology,Tonsillectomy & Adenoidectomy - 5
+train,General Medicine,Gen Med H&P - 1
+train,Neurology,Lightheadedness
+train,Cardiovascular / Pulmonary,Bronchoscopy - 8
+train,Cardiovascular / Pulmonary,CABG x4
+train,Orthopedic,ORIF - Fifth Metatarsal
+train,General Medicine,Gen Med Consult - 2
+train,ENT - Otolaryngology,ENT Consult
+train,Cardiovascular / Pulmonary,Cardio/Pulmo Discharge Summary
+train,Obstetrics / Gynecology,Radical Hysterectomy
+train,Cardiovascular / Pulmonary,Mediastinal Mass Resection
+train,Obstetrics / Gynecology,Gardnerella Bacterial Vaginosis
+train,Urology,Prostatectomy - Robotic Radical Retropubic
+train,Cardiovascular / Pulmonary,Endotracheal Intubation
+train,General Medicine,Gen Med Progress Note - 9
+train,ENT - Otolaryngology,Tympanomastoidectomy
+train,Orthopedic,Knee Arthroscopy & Medial Meniscoplasty
+train,Urology,Salvage Cystectomy
+train,Cardiovascular / Pulmonary,Cardioversion - Unsuccessful
+train,General Medicine,Gen Med Consult - 27
+train,Orthopedic,Carpal Tunnel Release - 7
+train,Orthopedic,FCR tendinitis
+train,Neurology,MRI Brain & Cerebral Angiogram
+train,Orthopedic,Ortho Office Visit
+train,Ophthalmology,Optometry - Letter
+train,Orthopedic,OssaTron Extracorporeal Shockwave Therapy
+train,Urology,Inguinal Exploration
+train,General Medicine,Motor Vehicle Accident
+train,Ophthalmology,Phacoemulsification & Lens Implantation - 4
+train,General Medicine,SOAP - Substance Abuse
+train,Cardiovascular / Pulmonary,Cardiac Catheterization - 2
+train,Neurology,CT Brain - SAH
+train,Urology,TURP
+train,Orthopedic,Hardware Removal - Ulnar
+train,Orthopedic,ORIF - 3
+train,Cardiovascular / Pulmonary,Tracheostomy Tube Consult
+train,Cardiovascular / Pulmonary,CT Chest
+train,Orthopedic,Neck Pain - Discharge Summary
+train,Gastroenterology,Esophagogastroduodenoscopy - 8
+train,Cardiovascular / Pulmonary,Pigtail Catheter Insertion
+train,ENT - Otolaryngology,BMT & T&A
+train,Orthopedic,ORIF & Cervical Fusion
+train,General Medicine,Discharge Summary - 6
+train,Urology,Inguinal Hernia Repair - 2
+train,ENT - Otolaryngology,BMT & Adenoidectomy
+train,ENT - Otolaryngology,Status Post Tympanoplasty
+train,Gastroenterology,Hemicolectomy
+train,Neurology,MRI Brain - Pilocytic Astrocytoma
+train,Obstetrics / Gynecology,Ultrasound OB
+train,Orthopedic,Ankle Sprain - H&P
+train,Cardiovascular / Pulmonary,Stress Test Dobutamine
+train,Cardiovascular / Pulmonary,Nuclear Cardiac Stress Report
+train,Ophthalmology,Phacoemulsification & Lens Implantation
+train,Neurology,MCA Aneurysm
+train,Cardiovascular / Pulmonary,Cardiac Consultation - 6
+train,Gastroenterology,Gastrointestinal Bleed - Discharge Summary
+train,Ophthalmology,Electronystagmogram
+train,ENT - Otolaryngology,Tonsillectomy and Septoplasty
+train,Cardiovascular / Pulmonary,Transesophageal Echocardiogram - 6
+train,Orthopedic,Ganglion Excision
+train,Obstetrics / Gynecology,Salpingooophorectomy - Laparoscopic
+train,General Medicine,Headache - Emergency Visit
+train,Orthopedic,Finger triggering and locking
+train,Cardiovascular / Pulmonary,Lower Extremity Arterial Doppler
+train,Cardiovascular / Pulmonary,Cardiac Consult & Cardioversion
+train,Gastroenterology,Endoscopy - 3
+train,General Medicine,Normal ROS Template
+train,Cardiovascular / Pulmonary,Mesothelioma - Consult
+train,Gastroenterology,Esophagogastroduodenoscopy - 13
+train,Urology,Orchiopexy
+train,Obstetrics / Gynecology,D&C & Hysteroscopy Followup
+train,General Medicine,Gen Med SOAP - 10
+train,General Medicine,Gen Med SOAP - 8
+train,Ophthalmology,Pars Plana Vitrectomy & Lensectomy
+train,Urology,Inguinal Herniorrhaphy - 2
+train,Gastroenterology,Juxtarenal Abdominal Aortic Aneurysm Repair
+train,Cardiovascular / Pulmonary,Tilt Table Test
+train,Obstetrics / Gynecology,Laparoscopy
+train,Obstetrics / Gynecology,Delivery Note - 10
+train,Obstetrics / Gynecology,D&C & Laparoscopy
+train,Orthopedic,MRI Elbow - 1
+train,Cardiovascular / Pulmonary,Cardiology Office Visit - 1
+train,General Medicine,Gen Med Consult - 35
+train,Cardiovascular / Pulmonary,Lobectomy - VATS
+train,Obstetrics / Gynecology,TAH & Salpingo-oophorectomy & Lysis of Adhesions
+train,Orthopedic,Hardware Removal - Elbow
+train,Urology,Scrotal Exploration
+train,Orthopedic,Ulnar Nerve Transposition & Olecranon Bursa Excision
+train,Obstetrics / Gynecology,Vaginal Delivery - Vacuum-Assisted
+train,Cardiovascular / Pulmonary,Myocardial Perfusion Imaging - 2
+train,Gastroenterology,Colonoscopy - 2
+train,Gastroenterology,Consult - Rectal Bleeding
+train,Ophthalmology,Cataract Surgery
+train,Gastroenterology,Gastroscopy - 1
+train,General Medicine,Hypothermia - Discharge Summary
+train,Ophthalmology,Cataract Extraction Followup
+train,Neurology,TIA & Lumbar Stenosis
+train,Cardiovascular / Pulmonary,Discharge Summary
+train,Cardiovascular / Pulmonary,Bronchoscopy Brushings
+train,Cardiovascular / Pulmonary,Thoracoscopy & Thoracotomy - Mesothelioma
+train,Ophthalmology,Conjunctivitis
+train,Gastroenterology,GI Consultation - 2
+train,Gastroenterology,Blood per Rectum
+train,Cardiovascular / Pulmonary,Holter Monitor Report - 1
+train,General Medicine,Gen Med Consult - 7
+train,Neurology,Cerebral Angiogram & MRA
+train,Neurology,MRI Brain - Toxoplasmosis
+train,Cardiovascular / Pulmonary,Complex Cyanotic Congenital Heart Disease
+train,Cardiovascular / Pulmonary,Bronchoscopy - 3
+train,Orthopedic,Arthroscopy Shoulder/Knee
+train,Gastroenterology,EGD - 2
+train,General Medicine,Discharge Summary - 9
+train,Obstetrics / Gynecology,Hysterectomy (TAH - BSO)
+train,Cardiovascular / Pulmonary,Stress Test Bruce Protocol
+train,Neurology,CT Brain: Subdural Hemorrhage.
+train,ENT - Otolaryngology,Stapedectomy - Argon Lasor Assisted
+train,Ophthalmology,Cataract - Second Opinion
+train,Urology,Neurogenic Bladder - Consult
+train,Gastroenterology,Abdominal Abscess I&D
+train,Neurology,Discharge Summary - Cerebral Palsy
+train,Gastroenterology,Colonoscopy - 8
+train,Gastroenterology,Appendectomy Laparoscopic - 1
+train,General Medicine,Discharge Summary - 13
+train,Neurology,Migraine without Aura - Consult
+train,Gastroenterology,Laparoscopic Cholecystectomy - 7
+train,Ophthalmology,Phacoemulsification & Lens Implantation - 2
+train,ENT - Otolaryngology,CT Neck
+train,Gastroenterology,GI Bleed - Discharge Summary
+train,Urology,Prostatitis - Recheck
+train,Ophthalmology,Tube Shunt - Ahmed Valve Implant
+train,Neurology,Alzheimer Disease
+train,General Medicine,Consult - CHF & Lymphedema
+train,General Medicine,Fall & Laceration
+train,ENT - Otolaryngology,Sinus Fractures Repairs
+train,Cardiovascular / Pulmonary,Thoracoabdominal Aneurysm
+validation,General Medicine,Gen Med Consult - 53
+validation,Cardiovascular / Pulmonary,Q-Fever Endocarditis
+validation,Orthopedic,Austin-Moore Bipolar Hemiarthroplasty
+validation,Neurology,Glioma - 1
+validation,Orthopedic,Biceps Tendon Repair
+validation,Cardiovascular / Pulmonary,Heart Catheterization & Angiography - 2
+validation,Orthopedic,Orthopedic Consult - 5
+validation,Cardiovascular / Pulmonary,Tracheostomy Change
+validation,Gastroenterology,Esophagogastroduodenoscopy with Biopsies
+validation,ENT - Otolaryngology,Status Post T&A
+validation,Cardiovascular / Pulmonary,Chest discomfort & palpitations - Consult.
+validation,Cardiovascular / Pulmonary,Bronchoscopy - 2
+validation,Gastroenterology,Diverticulectomy & Laparotomy
+validation,Ophthalmology,Vitrectomy - 3
+validation,General Medicine,Pain from Hernia - ER Consult
+validation,Orthopedic,Lumbar Radiculopathy - Consult
+validation,Obstetrics / Gynecology,Exploratory Laparotomy - 2
+validation,Urology,Testicular Ultrasound
+validation,General Medicine,Gen Med Consult - 32
+validation,Cardiovascular / Pulmonary,Cardiac Consultation - 3
+validation,General Medicine,Gen Med H&P - 2
+validation,Neurology,MRI Brain - Pontine Stroke
+validation,Gastroenterology,Exploratory Laparotomy
+validation,ENT - Otolaryngology,Tonsillectomy
+validation,Urology,Hydrocelectomy.
+validation,Orthopedic,CT Neck - 2
+validation,Urology,Bladder Instillation
+validation,Neurology,MRI Brain - Progressive Aphasia
+validation,Neurology,Acute Intracerebral Hemorrhage
+validation,Neurology,Wilson's Disease - Letter
+validation,Neurology,Moyamoya Disease
+validation,Cardiovascular / Pulmonary,Coarctation of Aorta
+validation,Cardiovascular / Pulmonary,Chest PA & Lateral
+validation,Orthopedic,IME & Record Review - Orthopedic
+validation,Obstetrics / Gynecology,"Suction, Dilation, & Curettage"
+validation,Cardiovascular / Pulmonary,Carotid Endarterectomy
+validation,Cardiovascular / Pulmonary,Cardiac Radionuclide Stress Test
+validation,Neurology,Consult - Facial Twitching
+validation,Neurology,Neurologic Consultation - 1
+validation,Ophthalmology,Trabeculectomy
+validation,Neurology,Dural AVM
+validation,Neurology,Rolandic Epilepsy
+validation,Cardiovascular / Pulmonary,Consult - Abnormal EKG
+validation,Orthopedic,I&D & Open Reduction - Forearm
+validation,Neurology,HCT - Calcification of Basal Ganglia
+validation,Neurology,Glioma - 2
+validation,Orthopedic,Spinal Fusion & Instrumentation
+validation,General Medicine,Viral Syndrome - ER Visit
+validation,General Medicine,Tongue Swelling
+validation,Cardiovascular / Pulmonary,Echocardiogram - 3
+validation,Ophthalmology,Phacoemulsification & Lens Implantation - 1
+validation,ENT - Otolaryngology,Revision Rhinoplasty.
+validation,Orthopedic,I&D - ORIF Wound
+validation,Orthopedic,Pectoralis Tendon Repair
+validation,Cardiovascular / Pulmonary,Coronary CT Angiography (CCTA) - 1
+validation,ENT - Otolaryngology,Tonsillectomy & Adenoidectomy - 1
+validation,Cardiovascular / Pulmonary,Selective Coronary Angiography & Angioplasty
+validation,Gastroenterology,Gastroscopy
+validation,General Medicine,H&P - Gen Med - 2
+validation,Obstetrics / Gynecology,External Cephalic Version
+validation,Orthopedic,Youngswick Osteotomy
+validation,Urology,Hypospadias Repair & Chordee Release - 1
+validation,Cardiovascular / Pulmonary,Thoracotomy & Pleurectomy
+validation,Neurology,Consult - Seizures
+validation,Ophthalmology,Ruptured Globe Repair - Sclera and Limbus
+validation,Gastroenterology,Laparoscopic Cholecystectomy - 8
+validation,Cardiovascular / Pulmonary,Abnormal Stress Test
+validation,Obstetrics / Gynecology,BTL & Salpingectomy
+validation,Obstetrics / Gynecology,Low-Transverse C-Section
+validation,Gastroenterology,Endoscopy - 2
+validation,Urology,Elevated PSA - H&P
+validation,Obstetrics / Gynecology,Total Abdominal Hysterectomy - 3
+validation,Orthopedic,MRI Knee - 1
+validation,Orthopedic,ORIF of Left Distal Radius
+validation,Orthopedic,Bunion & Pes Planovalgus Deformity
+validation,General Medicine,Gen Med Progress Note - 11
+validation,Gastroenterology,GI Consultation - 1
+validation,Cardiovascular / Pulmonary,Cardiac Cath & Coronary Angiography
+validation,Urology,Prostate Adenocarcinoma - H&P
+validation,Cardiovascular / Pulmonary,Heart Catheterization & Angiography - 1
+validation,Cardiovascular / Pulmonary,Chest Wall Tumor Resection
+validation,General Medicine,Discharge Summary - 8
+validation,Orthopedic,Endoscopic Carpal Tunnel Rlease
+validation,Orthopedic,Styloidectomy
+validation,ENT - Otolaryngology,Myringotomy/Tube Insertion - 2
+validation,Gastroenterology,EGD & PEG Tube Placement
+validation,General Medicine,Consult - Smoking Cessation
+validation,Gastroenterology,Colonoscopy - 11
+validation,Cardiovascular / Pulmonary,Atrial Fibrillation Management
+validation,Orthopedic,ORIF - Malleolus
+validation,Ophthalmology,Cataract Extraction - 2
+validation,Neurology,Consult - Alzheimer disease
+validation,Cardiovascular / Pulmonary,Lexiscan Nuclear Scan
+validation,Gastroenterology,Laparoscopic Cholecystectomy
+validation,Gastroenterology,EGD & Colonoscopy
+validation,General Medicine,Gen Med Consult - 11
+validation,Cardiovascular / Pulmonary,"Heart Catheterization, Ventriculography, & Angiography - 4"
+validation,Neurology,MRI Brain and Brainstem
+validation,Gastroenterology,Viral Gastroenteritis
+validation,Orthopedic,Open Plantar Fasciotomy
+validation,Cardiovascular / Pulmonary,Dilated Cardiomyopathy - Consult
+validation,Gastroenterology,Laparoscopic Appendectomy - 3
+validation,Ophthalmology,Ophthalmology - Letter - 3
+validation,Obstetrics / Gynecology,LEEP
+validation,Gastroenterology,Endovascular Abdominal Aortic Aneurysm Repair
+validation,Orthopedic,Total Knee Arthoplasty - Right - 1
+validation,Urology,Prostate Adenocarcinoma - 1
+validation,Neurology,Organic Brain Syndrome
+validation,Gastroenterology,Gastroscopy - 2
+validation,Ophthalmology,Difficulty Distance Vision & Fine Print at Near
+validation,Gastroenterology,Esophagogastroduodenoscopy - 9
+validation,Orthopedic,Arthrodesis
+validation,Orthopedic,Back & Leg Pain - Discharge Summary
+validation,Urology,Penile Injury
+validation,Urology,Pubic Cellulitis
+validation,General Medicine,Gen Med Consult - 16
+validation,Cardiovascular / Pulmonary,Laparoscopic Adrenalectomy
+validation,Cardiovascular / Pulmonary,Stress Test Graded Exercise Treadmill
+validation,Orthopedic,Total Hip Replacement - 1
+validation,Cardiovascular / Pulmonary,Heart Catheterization & Angiography
+validation,Cardiovascular / Pulmonary,Cardiac Allograft Transplant
+validation,Cardiovascular / Pulmonary,Cardiac Catheterization - 7
+validation,Gastroenterology,Endoscopy With Biopsy
+validation,Cardiovascular / Pulmonary,Heart Catheterization - 1
+validation,Neurology,MRI Brain - Leukoencephalopathy
+validation,General Medicine,Normal Male ROS Template - 1
+validation,Urology,Ureteral Calculus - Consult
+validation,Urology,Vasectomy
+validation,Gastroenterology,EGD with Biopsy - 2
+validation,Ophthalmology,Phacoemulsification
+validation,Orthopedic,Arthroscopic Rotator Cuff Repair - 2
+validation,Cardiovascular / Pulmonary,"Heart Catheterization, Ventriculography, & Angiography - 8"
+validation,Neurology,Reflex Sympathetic Dystrophy - Letter
+validation,General Medicine,Antibiotic Management Consult
+validation,General Medicine,Consult - Chest Pain - 1
+validation,General Medicine,Medical Management Consult Request
+validation,Neurology,CT Brain - Stroke
+validation,Urology,Inguinal Hernia Repair - 6
+validation,ENT - Otolaryngology,Flexible Nasal Laryngoscopy
+validation,ENT - Otolaryngology,Adenotonsillectomy - 2
+validation,Neurology,MRI Brain - SLE & Stroke
+validation,Ophthalmology,Scleral Buckle Opening - General Anesthesia
+validation,Urology,Urology Letter
+validation,Ophthalmology,Premature retina and vitreous
+validation,Cardiovascular / Pulmonary,Cystic Fibrosis
+validation,Orthopedic,Hardware Removal - Metatarsal
+validation,Cardiovascular / Pulmonary,Bronchoscopy - 1
+validation,Orthopedic,Cemented Hemiarthroplasty & Biopsy
+validation,Gastroenterology,Proctitis & Proctocolitis
+validation,Gastroenterology,Gastroscopy - 3
+validation,Orthopedic,Arthroscopic Debridement & Labral Repair - Hip
+validation,Urology,Foreign Object Removal - Urethra
+validation,ENT - Otolaryngology,Ethmoidectomy & Nasal Polypectomy
+validation,Cardiovascular / Pulmonary,Pericardial Effusion
+validation,General Medicine,Gen Med Consult - 42
+validation,Obstetrics / Gynecology,Laser of Vulva
+validation,Cardiovascular / Pulmonary,Stress Test Dobutamine Myoview
+validation,General Medicine,Gen Med Consult - 6
+validation,Orthopedic,Right Shoulder Hemiarthroplasty
+validation,Obstetrics / Gynecology,Low-Transverse C-Section & BTL
+validation,General Medicine,Gen Med Consult - 20
+validation,Urology,Mini Laparotomy & Radical Retropubic Prostatectomy
+validation,Cardiovascular / Pulmonary,Cardiolite Treadmill Stress Test
+validation,Cardiovascular / Pulmonary,Stress Test Adenosine Myoview
+validation,Gastroenterology,Colonoscopy - 10
+validation,Gastroenterology,Liver Biopsy
+validation,Cardiovascular / Pulmonary,Murmur & Bacteremia.
+validation,Gastroenterology,Colonoscopy - 7
+validation,Obstetrics / Gynecology,Laparoscopic Supracervical Hysterectomy.
+validation,Obstetrics / Gynecology,Hysterectomy - Discharge Summary
+validation,ENT - Otolaryngology,Recurrent nasal obstruction
+validation,Obstetrics / Gynecology,Laparotomy & Myomectomy
+validation,General Medicine,Consult - Hypertension
+validation,Obstetrics / Gynecology,Delivery Note - 4
+validation,Cardiovascular / Pulmonary,Subxiphoid Pericardial Window - 1
+validation,Ophthalmology,Scleral Buckle Opening
+validation,Urology,Penile Mass - Emergency Visit
+validation,Gastroenterology,Small Bowel Obstruction
+validation,ENT - Otolaryngology,Tonsillectomy & Adenoidectomy - 3
+validation,Gastroenterology,Endoscopy - 4
+validation,Gastroenterology,Laparoscopic Appendectomy - 5
+validation,General Medicine,Gen Med Consult - 52
+validation,Cardiovascular / Pulmonary,Subxiphoid Pericardiotomy
+validation,General Medicine,Possible Spider Bite
+validation,Orthopedic,Mumford Procedure & Acromioplasty
+validation,Cardiovascular / Pulmonary,Atrioventricular Septal Defect
+validation,Obstetrics / Gynecology,Physical Exam and Pap - 1
+validation,Obstetrics / Gynecology,Delivery Note - 3
+validation,Cardiovascular / Pulmonary,High PT-INR - ER Visit
+validation,Obstetrics / Gynecology,Total Abdominal Hysterectomy - 1
+validation,Cardiovascular / Pulmonary,Exercise Stress Test - 1
+validation,Gastroenterology,Gastrointestinal Bleed - ER Visit
+validation,ENT - Otolaryngology,Ear Pain - Drainage
+validation,Urology,Flexible Cystoscopy - Atrophic Vaginitis
+validation,Cardiovascular / Pulmonary,Bronchoscopy & Thoracotomy
+validation,General Medicine,Normal Male Exam Template - 4
+validation,Cardiovascular / Pulmonary,Elevated Cardiac Enzymes
+validation,Cardiovascular / Pulmonary,Bronchoscopy - 6
+validation,Gastroenterology,Upper Endoscopy - Foreign Body Removal
+validation,General Medicine,Discharge Summary - 5
+validation,Orthopedic,Cartilage Loose Body Removal
+validation,ENT - Otolaryngology,Tympanostomy
+validation,General Medicine,Gen Med Consult - 12
+validation,Ophthalmology,Phacoemulsification & Lens Implantation - 5
+validation,General Medicine,Gen Med Consult - 38
+validation,Neurology,CT Brain
+validation,Cardiovascular / Pulmonary,Coronary Angiography
+validation,Cardiovascular / Pulmonary,Transesophageal Echocardiography Probe
+validation,Ophthalmology,Eye Examination - H&P
+validation,Obstetrics / Gynecology,Laparoscopy & Salpingo-oophorectomy
+validation,Cardiovascular / Pulmonary,Bronchoscopy
+validation,Obstetrics / Gynecology,Low-Transverse C-Section - 7
+validation,Orthopedic,Knee Osteoarthrosis - Discharge Summary
+validation,Orthopedic,Dupuytren Disease Excision
+validation,General Medicine,URI - SOAP
+validation,Cardiovascular / Pulmonary,2-D Echocardiogram - 4
+validation,Neurology,MRI of Brain w/o Contrast.
+validation,ENT - Otolaryngology,Postop Parathyroid Exploration & Parathyroidectomy
+validation,Obstetrics / Gynecology,Diagnostic Laparoscopy - 1
+validation,General Medicine,Normal ROS Template - 2
+validation,Neurology,Dandy-Walker Malformation
+validation,Gastroenterology,Laparoscopic Appendectomy
+validation,Orthopedic,Closed Reduction Percutaneous Pinning
+validation,Neurology,Cervical Cord Lesion - Consult
+validation,Cardiovascular / Pulmonary,Dobutamine Stress Test - 1
+validation,Cardiovascular / Pulmonary,Femoral Artery Cannulation & Aortogram
+validation,Ophthalmology,Cataract
+validation,Cardiovascular / Pulmonary,Subxiphoid Pericardial Window
+validation,Urology,Cystourethroscopy & Urethral Dilation
+validation,Orthopedic,ORIF - 2
+validation,General Medicine,H&P - Gen Med - 1
+validation,General Medicine,Cough & Abdominal Pain
+validation,General Medicine,Refractory Hypertension - Followup
+validation,Cardiovascular / Pulmonary,Cardiac Catheterization - 1
+validation,Urology,Erectile Dysfunction - Followup
+validation,Ophthalmology,Phacoemulsification & Lens Implantation - 7
+validation,Orthopedic,Patellar Tendon & Retinaculum Repair
+validation,Cardiovascular / Pulmonary,Exercise Stress Test - 3
+validation,General Medicine,HIV Followup - 1
+validation,Obstetrics / Gynecology,D&C - Discharge Summary
+validation,Orthopedic,Rotator Cuff Repair
+validation,Cardiovascular / Pulmonary,Discharge Summary - Respiratory Failure
+validation,Neurology,Multiple Neurological Symptoms
+validation,ENT - Otolaryngology,Bilateral Myringotomies
+validation,Cardiovascular / Pulmonary,Coronary CT Angiography (CCTA) - 3
+validation,Orthopedic,Hemiarthroplasty - Shoulder
+validation,Urology,Prostate Fossa Irradiation - Followup
+validation,ENT - Otolaryngology,Vertigo Consult
+validation,Obstetrics / Gynecology,Pelvic Laparotomy
+validation,Cardiovascular / Pulmonary,Arterial Imaging
+validation,Cardiovascular / Pulmonary,Shone complex
+validation,Gastroenterology,Epigastric Herniorrhaphy
+validation,Obstetrics / Gynecology,TAH - Discharge Summary
+validation,Gastroenterology,Colonoscopy - 22
+validation,Obstetrics / Gynecology,Full-Field Digital Mammogram (FFDM) - 1
+validation,Orthopedic,Closed ORIF - Ankle
+validation,Urology,Inguinal Hernia Repair - Indirect
+validation,Orthopedic,Total Knee Arthroplasty
+validation,Orthopedic,Calcaneal Lengthening Osteotomy
+validation,Cardiovascular / Pulmonary,PICC line insertion
+validation,Orthopedic,MRI Shoulder - 1
+validation,Gastroenterology,Laparoscopic Cholecystectomy - 1
+validation,Orthopedic,Lower back pain
+validation,Gastroenterology,Laparoscopy & Sigmoidoscopy
+validation,Obstetrics / Gynecology,Ectopic Pregnancy - Discharge Summary
+validation,Orthopedic,Dorsal Extensor Compartment Release
+validation,General Medicine,Gen Med Consult - 34
+validation,Cardiovascular / Pulmonary,"Heart Catheterization, Ventriculography, & Angiography - 7"
+validation,Urology,I&D - Penoscrotal Abscess
+validation,Obstetrics / Gynecology,Left Lower Quadrant Pain - ER Visit
+validation,Obstetrics / Gynecology,Total Abdominal Hysterectomy - Followup
+validation,General Medicine,Discharge Summary - 3
+validation,Cardiovascular / Pulmonary,COPD - Discharge Summary
+validation,Urology,Hypospadias Repair & Chordee Release
+validation,Cardiovascular / Pulmonary,Pacemaker Lead Placement & Rrevision.
+validation,Cardiovascular / Pulmonary,Pulmonary Function Test
+validation,General Medicine,Gen Med Progress Note - 10
+validation,General Medicine,Hydrocarbon Aspiration - ER Visit
+validation,Gastroenterology,Endoscopy Template
+validation,Cardiovascular / Pulmonary,Consult - Atrial Fibrillation - 1
+validation,Orthopedic,Osteotomy & Bunionectomy
+validation,Cardiovascular / Pulmonary,Cardiac Catheterization - 8
+validation,Urology,BioArc Midurethral Sling
+validation,Urology,Epididymectomy
+validation,General Medicine,Gen Med Consult - 33
+validation,Gastroenterology,Laparoscopic Cholecystectomy & Liver Cyst Excision
+validation,General Medicine,Gen Med Consult - 1
+validation,Gastroenterology,Colonoscopy with Biopsy
+validation,Obstetrics / Gynecology,Ultrasound OB - 8
+validation,Obstetrics / Gynecology,Laparoscopic Ablation of Eendometrial Implants
+validation,Urology,E. Coli UTI - Followup
+test,Obstetrics / Gynecology,MRI Breast - 1
+test,Orthopedic,Back Injury IME
+test,Ophthalmology,Vitrectomy - 1
+test,Ophthalmology,Bilateral Upper Lid Blepharoplasty
+test,General Medicine,Normal Physical Exam Template - 6
+test,General Medicine,Gen Med Consult - 4
+test,Orthopedic,Carpal Tunnel Release - 1
+test,General Medicine,Normal Physical Exam Template - 2
+test,Neurology,CT Head - 4
+test,Cardiovascular / Pulmonary,Mayoview - 1
+test,Urology,Hydrocelectomy - 1
+test,Orthopedic,Delayed ORIF
+test,Neurology,CT Head - 2
+test,Cardiovascular / Pulmonary,Cineangiography - 1
+test,Obstetrics / Gynecology,Ultrasound OB - 3
+test,Orthopedic,Endoscopic Carpal Tunnel & de Quervain's Release
+test,Neurology,Cerebral Angiogram - Lateral Medullary Syndrome
+test,Orthopedic,Arthroscopy - Shoulder
+test,ENT - Otolaryngology,Otitis Media
+test,Urology,Sling (SPARC Suburethral)
+test,General Medicine,Gen Med Consult - 24
+test,Neurology,Guillain-Barre Syndrome
+test,General Medicine,Gen Med Consult - 29
+test,Urology,Circumcision - 2
+test,Ophthalmology,Decreased Vision Consult
+test,Orthopedic,ORIF & Closed Reduction
+test,Urology,Penile Skin Bridges Excision
+test,Cardiovascular / Pulmonary,Bronchoscopy - Fiberoptic
+test,Orthopedic,Release of A1 Pulley
+test,Obstetrics / Gynecology,Bilateral Mammogram
+test,Neurology,CVA Consult - ER Visit
+test,Gastroenterology,EGD With Photos & Biopsies.
+test,Cardiovascular / Pulmonary,Cardiac Catheterization - 6
+test,Neurology,Pseudotumor Cerebri
+test,Orthopedic,Austin Bunionectomy
+test,Urology,Circumcision - 1
+test,ENT - Otolaryngology,Middle Ear Exploration
+test,Cardiovascular / Pulmonary,Flexible Bronchoscopy
+test,Gastroenterology,EGD Template - 2
+test,Orthopedic,Arthroscopic Meniscoplasty
+test,General Medicine,Gen Med SOAP - 2
+test,Cardiovascular / Pulmonary,Transesophageal Echocardiogram - 3
+test,Gastroenterology,Esophagogastroduodenoscopy & Gastrostomy Tube Insertion
+test,Cardiovascular / Pulmonary,Bronchoscopy - 5
+test,Urology,Vasectomy - 3
+test,Gastroenterology,Consult - Screening Colonoscopy
+test,General Medicine,Chronic Abscesses - Discharge Summary
+test,Urology,Prostate Adenocarcinoma - 3
+test,Orthopedic,Total Knee Replacement - 1
+test,Neurology,Iliopsoas Hematoma - 2
+test,Cardiovascular / Pulmonary,Chronic Atrial Fibrillation
+test,Ophthalmology,Radioactive Plaque - Removal
+test,Gastroenterology,Rectal Bleeding - Consult
+test,Cardiovascular / Pulmonary,Pulmonary Function Test - 3
+test,Obstetrics / Gynecology,Low-Transverse C-Section - 3
+test,General Medicine,Gen Med Progress Note - 7
+test,Obstetrics / Gynecology,Low-Transverse C-Section - 8
+test,Ophthalmology,Phacoemulsification & Cataract Extraction - 5
+test,Gastroenterology,Endoscopy
+test,Orthopedic,Osteotomy & Bunionectomy - 1
+test,Neurology,CT Head
+test,Ophthalmology,Phacoemulsification & Cataract Extraction - 1
+test,Cardiovascular / Pulmonary,Mayoview - 2
+test,Gastroenterology,Laparoscopic Appendectomy - 4
+test,Cardiovascular / Pulmonary,MRI of Lung - Adenocarcinoma
+test,Cardiovascular / Pulmonary,Aortobifemoral Bypass
+test,Cardiovascular / Pulmonary,Cardiology Office Visit - 2
+test,Cardiovascular / Pulmonary,"Heart Catheterization, Ventriculography, & Angiography - 2"
+test,Obstetrics / Gynecology,Delivery Note - 1
+test,Orthopedic,Total Hip Arthroplasty - Revision
+test,Orthopedic,Kyphoplasty
+test,Orthopedic,Knee Arthroplasty - Revision
+test,Cardiovascular / Pulmonary,Central Venous & Arterial  Line
+test,Cardiovascular / Pulmonary,Coronary Angiography & Abdominal Aortography
+test,General Medicine,Gen Med SOAP - 4
+test,Gastroenterology,Colonoscopy - 6
+test,Orthopedic,Arthrotomy & Ostectomy & Capsular Mass Excision
+test,Orthopedic,Hemiarthroplasty - Discharge Summary
+test,Gastroenterology,Sigmoidoscopy - 1
+test,Neurology,Cerebral Palsy - Letter
+test,Orthopedic,Aspiration - Knee Joint
+test,Orthopedic,de Quervain Release - Carpal
+test,Neurology,MRI Head - 1
+test,Urology,Circumcision - 3
+test,General Medicine,Patient with High Potassium
+test,Ophthalmology,Phacoemulsification & Lens Implantation - 3
+test,Neurology,Neuro Consult - Leg Weakness
+test,General Medicine,Headache - Urgent Care Visit
+test,Cardiovascular / Pulmonary,Discharge Summary - COPD
+test,Gastroenterology,Consult - Laparoscopic Cholecystectomy
+test,Gastroenterology,Flex Sig - 2
+test,Cardiovascular / Pulmonary,Fiberoptic Bronchoscopy - 1
+test,General Medicine,Gen Med Consult - 28
+test,Cardiovascular / Pulmonary,Holter Monitor Report
+test,Cardiovascular / Pulmonary,Ischemic Cardiac Disease - Progress Note
+test,Cardiovascular / Pulmonary,Pleurocentesis
+test,Gastroenterology,EGD Template - 3
+test,ENT - Otolaryngology,ORIF Facial Fractures - Followup
+test,Neurology,MRI Brain - Wernicke aphasia
+test,Cardiovascular / Pulmonary,2-D Doppler
+test,Obstetrics / Gynecology,Tubal Ligation
+test,General Medicine,Gen Med Consult - 13
+test,Obstetrics / Gynecology,Low-Transverse C-Section - 10
+test,Cardiovascular / Pulmonary,Paroxysmal Atrial Fibrillation
+test,Ophthalmology,Vitrectomy
+test,Cardiovascular / Pulmonary,Thrombectomy
+test,Urology,Meatotomy Template
+test,Orthopedic,Back Pain - Discharge Summary
+test,Cardiovascular / Pulmonary,Triple Lumen Catheter Insertion - 1
+test,Cardiovascular / Pulmonary,Abnormal Echocardiogram
+test,Orthopedic,MRI Knee - 2
+test,General Medicine,Revocation Admission
+test,Cardiovascular / Pulmonary,Triple Lumen Catheter Insertion
+test,Gastroenterology,Colonoscopy With Photos
+test,Orthopedic,Closed Reduction - 2
+test,Ophthalmology,Phacoemulsification & Cataract Extraction - 3
+test,Orthopedic,Bbunionectomy & Metatarsal Osteotomy
+test,Gastroenterology,Laparoscopic Cholecystectomy & Appendectomy
+test,Cardiovascular / Pulmonary,Echocardiogram
+test,Ophthalmology,Ahmed Shunt Placement
+test,General Medicine,Fall - ER Visit
+test,General Medicine,Female ROS
+test,Gastroenterology,Exploratory Laparotomy - 1
+test,Gastroenterology,Hepatobiliary Scan
+test,Urology,Orchiectomy & Testis Fixation
+test,Gastroenterology,ER Report - Stomach Pain
+test,Obstetrics / Gynecology,Low-Transverse C-Section - 1
+test,Orthopedic,Arthrotomy & Subscapularis Tendon Repair
+test,Cardiovascular / Pulmonary,PAF - 6-Month Followup
+test,Orthopedic,Carpal Tunnel Release - 4
+test,Urology,Orchiopexy & Hernia Repair - 1
+test,General Medicine,Consult - Sepsis
+test,Gastroenterology,Colonoscopy - 9
+test,Obstetrics / Gynecology,Low-Transverse C-Section - 4
+test,Obstetrics / Gynecology,D&C & Laparoscopy - 1
+test,Cardiovascular / Pulmonary,Cardiac Cath & Selective Coronary Angiography
+test,General Medicine,Gen Med Progress Note - 6
+test,Gastroenterology,Laparoscopic Cholecystectomy - 4
+test,Cardiovascular / Pulmonary,Pacemaker Insertion
+test,Gastroenterology,Laparoscopic Appendectomy - 2
+test,General Medicine,Recurrent Abscesses - Consult
+test,General Medicine,Fifth Disease - SOAP
+test,Cardiovascular / Pulmonary,Thoracentesis - 1
+test,Orthopedic,MRI Knee - 5
+test,Orthopedic,Spinal Manipulation
+test,General Medicine,HIV Followup
+test,ENT - Otolaryngology,Septorhinoplasty
+test,General Medicine,Request For Consultation
+test,General Medicine,Gen Med Consult - 14
+test,General Medicine,ER Report - Chest Pain & Fever
+test,Obstetrics / Gynecology,Ultrasound OB - 2
+test,Orthopedic,Low Back Pain - Consult
+test,Cardiovascular / Pulmonary,Endovascular Brachytherapy
+test,Orthopedic,"ORIF, Closed Reduction, Screw Fixation, Etc."
+test,Gastroenterology,Nissen Fundoplication
+test,Gastroenterology,EGD with Biopsy - 1
+test,General Medicine,MRI Brain - CO poisoning
+test,Cardiovascular / Pulmonary,Thoracotomy & Bronchoscopy
+test,Urology,HPV Consult
+test,Obstetrics / Gynecology,OB/GYN Consultation - 4
+test,Ophthalmology,Ruptured Globe Repair - Cornea
+test,Obstetrics / Gynecology,Hemivulvectomy
+test,Obstetrics / Gynecology,Cholestasis Of Pregnancy
+test,Neurology,Essential Tremor & Torticollis
+test,General Medicine,Gen Med Progress Note - 3
+test,ENT - Otolaryngology,I&D - Auricular Hematoma
+test,General Medicine,Gen Med Consult - 48
+test,Cardiovascular / Pulmonary,Aortic Valve Replacement
+test,Cardiovascular / Pulmonary,Peripheral Effusion - Consult
+test,Orthopedic,MRI Shoulder - 3
+test,Urology,Vasectomy - 1
+test,ENT - Otolaryngology,ENT Consult - 1
+test,General Medicine,Gen Med Consult - 21
+test,Gastroenterology,Laparoscopic Cholecystectomy - 3
+test,Gastroenterology,Ultrasound - Abdomen
+test,Cardiovascular / Pulmonary,Pulmonary Function Test - 1
+test,Cardiovascular / Pulmonary,Transesophageal Echocardiogram - 5
+test,Obstetrics / Gynecology,Laparoscopy - Drainage of Cyst
+test,General Medicine,Gen Med SOAP
+test,Cardiovascular / Pulmonary,Chest Pulmonary Angio
+test,Orthopedic,Hemiarthroplasty - Austin-Moore Bipolar
+test,Cardiovascular / Pulmonary,Double Lumen Port Inserstion
+test,Cardiovascular / Pulmonary,Adenosine Nuclear Scan
+test,Cardiovascular / Pulmonary,Exercise Myocardial Perfusion Study
+test,General Medicine,Normal Female ROS Template
+test,Cardiovascular / Pulmonary,Port-A-Cath Insertion - 5
+test,Urology,Circumcision
+test,Gastroenterology,Esophagogastroduodenoscopy with Biopsies -2
+test,Cardiovascular / Pulmonary,Cardiology Progress Note - 1
+test,Urology,Inguinal Hernia Repair - 3
+test,ENT - Otolaryngology,Ear Laceration Repair
+test,Neurology,Adult Hydrocephalus
+test,Obstetrics / Gynecology,Bilateral Tubal Occlusion - Laparoscopic
+test,General Medicine,Normal ROS Template - 4
+test,Cardiovascular / Pulmonary,Cardioversion - Direct Current - 1
+test,Obstetrics / Gynecology,Intrauterine Clots Removal
+test,Neurology,MRI Head
+test,Urology,Neuromodulator
+test,General Medicine,Gen Med Consult - 45
+test,ENT - Otolaryngology,Tonsillectomy & Adenoidectomy - 2
+test,ENT - Otolaryngology,Consult - Jaw Pain
+test,Neurology,Diagnostic Cerebral Angiogram
+test,Gastroenterology,Exploratory Laparotomy & Colon Resection
+test,ENT - Otolaryngology,Sample Normal Exam - ENT
+test,Ophthalmology,Nasolacrimal Probing
+test,ENT - Otolaryngology,Fiberoptic Nasolaryngoscopy
+test,Obstetrics / Gynecology,Culdoplasty & Vaginal Hysterectomy
+test,Obstetrics / Gynecology,Laparotomy & Salpingectomy
+test,Orthopedic,"Arthroscopy, Arthrotomy, Bankart lesion repair"
+test,ENT - Otolaryngology,CT Maxillofacial
+test,ENT - Otolaryngology,Nasal Septoplasty & Tonsillectomy
+test,Neurology,Cerebral Angiogram
+test,Neurology,Status Epilepticus
+test,Cardiovascular / Pulmonary,Carotid Endarterectomy - 1
+test,Cardiovascular / Pulmonary,Radionuclide Stress Test
+test,Orthopedic,"Arthroscopy, Meniscoplasty, & Chondroplasty"
+test,Orthopedic,Scarf Bunionectomy
+test,Orthopedic,Knee Surgery - Discharge Summary
+test,Cardiovascular / Pulmonary,ER Report - COPD
+test,Obstetrics / Gynecology,TAH & Salpingooophorectomy
+test,Cardiovascular / Pulmonary,Lower Extremity Venous Doppler
+test,Gastroenterology,Ultrasound - Abdomen - 1
+test,General Medicine,Asbestos Exposure - Hemoptysis
+test,Obstetrics / Gynecology,Ultrasound OB - 4
+test,Cardiovascular / Pulmonary,Mayoview
+test,Ophthalmology,Vitrectomy - General Anesthesia
+test,Neurology,SOAP - Temporal Mass
+test,Orthopedic,ORIF - Left Tibia
+test,Gastroenterology,Colonoscopy - 3
+test,Cardiovascular / Pulmonary,Transesophageal Echocardiogram - 1
+test,Urology,Overactive Bladder
+test,Obstetrics / Gynecology,Low-Transverse C-Section - 5
+test,Urology,Orchiopexy & Herniorrhaphy
+test,Gastroenterology,GI Consultation - 4
+test,Cardiovascular / Pulmonary,Angina - Consult
+test,General Medicine,Gen Med Consult - 10
+test,ENT - Otolaryngology,SOM - Serous Otitis Media
+test,Neurology,Suspected Seizure Activity
+test,Urology,Circumcision - 5
+test,Orthopedic,Superior Labrum Lesions Repair
+test,Obstetrics / Gynecology,Abdominosacrocolpopexy
+test,ENT - Otolaryngology,Nasal Septoplasty
+test,Gastroenterology,Endoscopy - 1
+test,Orthopedic,Ligament Reconstruction & Meniscus Repair
+test,Obstetrics / Gynecology,TAH & Salpingo-oophorectomy - 1
+test,ENT - Otolaryngology,Deviated Septum Repair - Followup
+test,Cardiovascular / Pulmonary,CT Chest - 2
+test,Gastroenterology,Barium Enema
+test,Obstetrics / Gynecology,Complete Physical - Female
+test,Cardiovascular / Pulmonary,Cardiac Catheterization - 4
+test,Orthopedic,Records Review - Orthopedic
+test,Gastroenterology,BICAP Cautery
+test,Gastroenterology,Colonoscopy - 18
+test,Gastroenterology,Colonoscopy - 12
+test,Cardiovascular / Pulmonary,Fiberoptic Flexible Bronchoscopy
+test,Urology,Consult - Prostate Cancer
+test,Urology,Hematuria & Urinary Retention
+test,Obstetrics / Gynecology,Laparoscopic Hysterectomy
+test,Obstetrics / Gynecology,Tubal Fulguration - Laparoscopic
+test,Orthopedic,Total Hip Arthroplasty
+test,Cardiovascular / Pulmonary,Aortobifemoral Bypass - 1
+test,Cardiovascular / Pulmonary,Chest Pain - Office Note
+test,General Medicine,H&P - Nausea & Vomiting
+test,Urology,Hematuria - Consult
+test,Cardiovascular / Pulmonary,SOAP - Shortness of Breath
+test,Orthopedic,Synovectomy - Partial
+test,Neurology,Neurologic Consultation - 3
+test,Urology,Urinary Retention
+test,Cardiovascular / Pulmonary,Lobectomy - Left Lower
+test,Orthopedic,Knee Amputation
+test,Cardiovascular / Pulmonary,Pulmonary Function Test - 2
+test,Orthopedic,Cervicalgia
+test,Cardiovascular / Pulmonary,Heart Catheterization
+test,Gastroenterology,Exploratory Laparotomy & Hernia Repair
+test,Cardiovascular / Pulmonary,Cardiovascular - Letter
+test,Neurology,Neurologic Consultation - 5
+test,General Medicine,Normal Female Exam Template - 1
+test,Cardiovascular / Pulmonary,Dual Chamber Generator Replacement
+test,Neurology,TIA - Cosult
+test,Neurology,Epidural Hematoma
+test,General Medicine,Gen Med SOAP - 5
+test,Ophthalmology,Blepharon & Entropion Repair
+test,Cardiovascular / Pulmonary,SOAP - Lung Mass
+test,Urology,Cryosurgical Ablation of Prostate
+test,Urology,Inguinal Herniorrhaphy - 3
+test,General Medicine,Accidental Celesta Ingestion - ER Visit
+test,General Medicine,Cellulitis - Discharge Summary
+test,Cardiovascular / Pulmonary,Ultrasound - Carotid - 1
+test,Orthopedic,Discharge Summary - Hip Surgery
+test,Orthopedic,Kyphoplasty & Vertebroplasty
+test,Ophthalmology,Trabeculectomy & Tenonectomy

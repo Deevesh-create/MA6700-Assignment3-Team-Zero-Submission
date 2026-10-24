@@ -1,0 +1,358 @@
+seed 6700 | device cuda
+--- 2.1 The file ---
+rows 4,999 | columns ['description', 'medical_specialty', 'sample_name', 'transcription', 'keywords'] | labels 40
+missing values: {'description': 0, 'medical_specialty': 0, 'sample_name': 0, 'transcription': 33, 'keywords': 1068}
+rows whose keywords start with the label: 3,850 of 3,931 (97.9%) -> we use only the transcription
+
+--- 2.2 One note, several labels ---
+rows with a transcription 4,966 | unique transcriptions 2,357 | with 2+ labels 2,148 (91.1%)
+labels per unique note: {1: 209, 2: 1725, 3: 388, 4: 34, 5: 1}
+
+--- 2.3 One label for each note ---
+label
+kept: one department               1926
+REMOVE: two or more specialties     367
+REMOVE: document type only           34
+REMOVE: fewer than 20 words          30
+most frequent removed pairs: {'Neurosurgery + Orthopedic': 46, 'Neurology + Orthopedic': 32, 'Neurology + Neurosurgery': 25, 'Orthopedic + Podiatry': 22, 'Gastroenterology + Nephrology': 13}
+near-duplicate pairs 12 (11 with the same label) | removed 12 | single-department notes 1,914
+
+--- 2.4 Class reduction rule ---
+ rule (notes >=)  classes  notes             smallest class  its test notes at 20%
+              50       10   1509 Hematology - Oncology (56)                     11
+              75        9   1453         Ophthalmology (75)                     15
+             100        7   1301            Neurology (122)                     24
+classes kept 9 | notes kept 1,453 (61.6% of unique notes) | largest / smallest 325 / 75 | out-of-scope notes 461 from 24 departments
+
+--- 2.5 Note length ---
+words per note: median 402 | tokens per note: median 544, max 3219 | tokens per word 1.34
+notes longer than 510 tokens: 778 of 1,453 (53.5%) | text lost by first-512, median long note: 36.3%, p90: 61.1%
+long notes by class: {'Cardiovascular / Pulmonary': '50%', 'Orthopedic': '66%', 'General Medicine': '64%', 'Gastroenterology': '38%', 'Obstetrics / Gynecology': '57%', 'Urology': '45%', 'Neurology': '70%', 'ENT - Otolaryngology': '45%', 'Ophthalmology': '35%'}
+
+--- 2.6 The split (created once) ---
+train 871 | validation 291 | test 291 | test MD5 1604267baf04
+                            train  validation  test
+label                                              
+Cardiovascular / Pulmonary    195          65    65
+Orthopedic                    129          43    44
+General Medicine              116          38    39
+Gastroenterology              107          36    35
+Obstetrics / Gynecology        83          28    28
+Urology                        77          26    25
+Neurology                      73          25    24
+ENT - Otolaryngology           46          15    16
+Ophthalmology                  45          15    15
+TOTAL                         871         291   291
+
+--- Before and after: one training note ---
+raw (as scraped)      : CHIEF COMPLAINT: , "I have had trouble breathing for the past 3 days",HISTORY: , 69-year-old Caucasian male complaining of difficulty breathing for 3 days.  He also states that he has been coughing accompanying with low-grade type fever.  He also admits to hav ...
+1. format repaired    : CHIEF COMPLAINT: "I have had trouble breathing for the past 3 days" HISTORY: 69-year-old Caucasian male complaining of difficulty breathing for 3 days. He also states that he has been coughing accompanying with low-grade type fever. He also admits to having in ...
+2. Model 1 words      : chief complaint have had trouble breathing for the past days history year old caucasian male complaining of difficulty breathing for days he also states that he has been coughing accompanying with low grade type fever he also admits to having intermittent head ...
+3. stop words removed : chief complaint trouble breathing past days history year old caucasian male complaining difficulty breathing days states coughing accompanying low grade type fever admits having intermittent headaches bilateral chest pain does radiate upper extremities jaws wo ...
+4. negation markers   : denies neg_any neg_illicit neg_drug neg_use travel history denies neg_any neg_recent neg_travel neg_overseas neg_allergies denies neg_any neg_drug neg_allergies neg_home neg_medications advair puff bid lisinop
+   (sentence used     : denies any illicit drug use. TRAVEL HISTORY: Denies any recent travel overseas ALLERGIES: Denies any drug allergies HOME MEDICATIONS: Advair 1 puff bid Lisinop )
+
+negation example: REVIEW OF SYSTEMS: The patient denies chest pain, shortness of breath or fever. No nausea but has knee pain.
+   with markers      : review of systems the patient denies neg_chest neg_pain neg_shortness neg_of neg_breath neg_or fever no neg_nausea but has knee pain
+
+training notes with a negation cue: 771 of 871 (88.5%)
+most frequent negated words (training notes): neg_of (366), neg_or (362), neg_the (318), neg_any (247), neg_and (233), neg_to (231), neg_evidence (180), neg_in (169), neg_was (145), neg_noted (130), neg_for (117), neg_acute (114)
+
+--- TF-IDF settings, validation split (C = 10, balanced) ---
+   negation markers stop words n-grams  features  validation macro F1
+0             False    english  (1, 1)      8189               0.8930
+1              True   keep all  (1, 1)      9711               0.8902
+2              True    english  (1, 1)      9467               0.8901
+3             False   keep all  (1, 1)      8435               0.8855
+4             False    english  (1, 2)     30511               0.8837
+5              True   keep all  (1, 2)     45784               0.8784
+6             False   keep all  (1, 2)     44664               0.8761
+7              True    english  (1, 2)     32184               0.8733
+
+--- 4.1 Model 1: C and class weights, validation split (top 5) ---
+    C class_weight  validation macro F1
+100.0     balanced               0.8972
+ 30.0     balanced               0.8937
+ 10.0     balanced               0.8930
+  3.0     balanced               0.8901
+ 30.0         none               0.8885
+Model 1: negation=False, stop words=english, n-grams=(1, 1), C=100.0, class_weight=balanced | features 8,189 | parameters 73,710 | train 0.8 s | validation macro F1 0.8972
+strongest terms per department:
+  Cardiovascular / Pulmonary: chest, artery, coronary, pulmonary, heart, lobe, disease, ventricular
+  Orthopedic: fracture, knee, joint, tourniquet, pain, tendon, trigger, extremity
+  General Medicine: foreign, clear, studies, body, fever, sounds, discharge, coughing
+  Gastroenterology: abdominal, colonoscopy, esophagus, bowel, stomach, colon, esophageal, gallbladder
+  Obstetrics / Gynecology: vaginal, uterus, cervix, pregnancy, pelvic, breast, cm, uterine
+  Urology: bladder, prostate, penis, circumcision, scrotal, cystoscopy, urethra, scrotum
+  Neurology: brain, mri, gait, reflexes, cerebral, motor, hydrocephalus, sensory
+  ENT - Otolaryngology: ear, nasal, tonsil, tonsils, nasopharynx, tonsillar, tonsillitis, oropharynx
+  Ophthalmology: eye, lid, lens, chamber, intraocular, cataract, limbus, macular
+
+--- 4.2 Tokenizers (training notes) ---
+                  tokens per word notes > 510 tokens tokens lost by first-512               'cholecystectomy'
+checkpoint                                                                                                   
+PubMedBERT                   1.34              53.2%                    32.1%                 cholecystectomy
+Bio_ClinicalBERT             1.56              62.0%                    39.0%  ch ##ole ##cy ##ste ##ct ##omy
+BERT-base                    1.49              59.6%                    36.9%  cho ##le ##cy ##ste ##ct ##omy
+
+--- 4.3 Test 1: the long-note option (PubMedBERT) ---
+PubMedBERT_head_s6700: loaded from outputs/runs/PubMedBERT_head_s6700.npz
+  epoch 1: train loss 1.7616 | validation macro F1 0.8818
+  epoch 2: train loss 0.3562 | validation macro F1 0.9096
+  epoch 3: train loss 0.1440 | validation macro F1 0.9125
+  epoch 4: train loss 0.0717 | validation macro F1 0.9109
+  epoch 5: train loss 0.0348 | validation macro F1 0.9192
+  epoch 6: train loss 0.0192 | validation macro F1 0.9192
+PubMedBERT_head_s6700: best epoch 5 | validation macro F1 0.9192 | train 3.0 min | 871 training pieces
+PubMedBERT_head_tail_s6700: loaded from outputs/runs/PubMedBERT_head_tail_s6700.npz
+  epoch 1: train loss 1.7512 | validation macro F1 0.8978
+  epoch 2: train loss 0.3335 | validation macro F1 0.9014
+  epoch 3: train loss 0.1262 | validation macro F1 0.9403
+  epoch 4: train loss 0.0689 | validation macro F1 0.9267
+  epoch 5: train loss 0.0296 | validation macro F1 0.9304
+  epoch 6: train loss 0.0098 | validation macro F1 0.9337
+PubMedBERT_head_tail_s6700: best epoch 3 | validation macro F1 0.9403 | train 3.0 min | 871 training pieces
+PubMedBERT_chunks_s6700: loaded from outputs/runs/PubMedBERT_chunks_s6700.npz
+  epoch 1: train loss 1.2354 | validation macro F1 0.8939
+  epoch 2: train loss 0.2089 | validation macro F1 0.9038
+  epoch 3: train loss 0.0857 | validation macro F1 0.9201
+  epoch 4: train loss 0.0329 | validation macro F1 0.9125
+  epoch 5: train loss 0.0146 | validation macro F1 0.9182
+  epoch 6: train loss 0.0045 | validation macro F1 0.9157
+PubMedBERT_chunks_s6700: best epoch 3 | validation macro F1 0.9201 | train 6.2 min | 1,799 training pieces
+           validation macro F1  accuracy short  accuracy long  train min  pieces
+option                                                                          
+head                    0.9192          0.9496         0.8837     3.0460     871
+head_tail               0.9403          0.9580         0.9128     3.0325     871
+chunks                  0.9201          0.9664         0.8605     6.2078    1799
+validation notes 119 short, 172 long | selected: head_tail
+
+--- 4.4 Test 2: the checkpoint ---
+Bio_ClinicalBERT_head_tail_s6700: loaded from outputs/runs/Bio_ClinicalBERT_head_tail_s6700.npz
+  epoch 1: train loss 1.9837 | validation macro F1 0.8118
+  epoch 2: train loss 0.5708 | validation macro F1 0.8952
+  epoch 3: train loss 0.1736 | validation macro F1 0.9025
+  epoch 4: train loss 0.0784 | validation macro F1 0.8906
+  epoch 5: train loss 0.0291 | validation macro F1 0.8969
+  epoch 6: train loss 0.0136 | validation macro F1 0.8926
+Bio_ClinicalBERT_head_tail_s6700: best epoch 3 | validation macro F1 0.9025 | train 3.0 min | 871 training pieces
+BERT-base_head_tail_s6700: loaded from outputs/runs/BERT-base_head_tail_s6700.npz
+  epoch 1: train loss 2.0078 | validation macro F1 0.8236
+  epoch 2: train loss 0.6941 | validation macro F1 0.8657
+  epoch 3: train loss 0.2478 | validation macro F1 0.9046
+  epoch 4: train loss 0.1028 | validation macro F1 0.8794
+  epoch 5: train loss 0.0397 | validation macro F1 0.8946
+  epoch 6: train loss 0.0205 | validation macro F1 0.8938
+BERT-base_head_tail_s6700: best epoch 3 | validation macro F1 0.9046 | train 3.0 min | 871 training pieces
+                  validation macro F1  best epoch
+checkpoint                                       
+PubMedBERT                     0.9403           3
+Bio_ClinicalBERT               0.9025           3
+BERT-base                      0.9046           3
+selected: PubMedBERT
+
+--- 4.5 Test 3: the seed (the selected design, five seeds) ---
+PubMedBERT_head_tail_s6701: loaded from outputs/runs/PubMedBERT_head_tail_s6701.npz
+  epoch 1: train loss 1.7277 | validation macro F1 0.8873
+  epoch 2: train loss 0.3206 | validation macro F1 0.9037
+  epoch 3: train loss 0.1078 | validation macro F1 0.8824
+  epoch 4: train loss 0.0585 | validation macro F1 0.9270
+  epoch 5: train loss 0.0182 | validation macro F1 0.9252
+  epoch 6: train loss 0.0185 | validation macro F1 0.9303
+PubMedBERT_head_tail_s6701: best epoch 6 | validation macro F1 0.9303 | train 3.0 min | 871 training pieces
+PubMedBERT_head_tail_s6702: loaded from outputs/runs/PubMedBERT_head_tail_s6702.npz
+  epoch 1: train loss 1.6367 | validation macro F1 0.8838
+  epoch 2: train loss 0.3228 | validation macro F1 0.9018
+  epoch 3: train loss 0.1475 | validation macro F1 0.9178
+  epoch 4: train loss 0.0708 | validation macro F1 0.9120
+  epoch 5: train loss 0.0378 | validation macro F1 0.9188
+  epoch 6: train loss 0.0149 | validation macro F1 0.9191
+PubMedBERT_head_tail_s6702: best epoch 6 | validation macro F1 0.9191 | train 3.0 min | 871 training pieces
+PubMedBERT_head_tail_s6703: loaded from outputs/runs/PubMedBERT_head_tail_s6703.npz
+  epoch 1: train loss 1.7864 | validation macro F1 0.8987
+  epoch 2: train loss 0.3584 | validation macro F1 0.9036
+  epoch 3: train loss 0.1384 | validation macro F1 0.9219
+  epoch 4: train loss 0.0524 | validation macro F1 0.9263
+  epoch 5: train loss 0.0190 | validation macro F1 0.9224
+  epoch 6: train loss 0.0071 | validation macro F1 0.9224
+PubMedBERT_head_tail_s6703: best epoch 4 | validation macro F1 0.9263 | train 3.0 min | 871 training pieces
+PubMedBERT_head_tail_s6704: loaded from outputs/runs/PubMedBERT_head_tail_s6704.npz
+  epoch 1: train loss 1.6968 | validation macro F1 0.8575
+  epoch 2: train loss 0.3339 | validation macro F1 0.8839
+  epoch 3: train loss 0.1547 | validation macro F1 0.9187
+  epoch 4: train loss 0.0636 | validation macro F1 0.9215
+  epoch 5: train loss 0.0156 | validation macro F1 0.9152
+  epoch 6: train loss 0.0092 | validation macro F1 0.9152
+PubMedBERT_head_tail_s6704: best epoch 4 | validation macro F1 0.9215 | train 3.0 min | 871 training pieces
+      validation macro F1  test macro F1
+seed                                    
+6700               0.9403         0.9420
+6701               0.9303         0.9587
+6702               0.9191         0.9402
+6703               0.9263         0.9503
+6704               0.9215         0.9445
+mean validation 0.9275 (sd 0.0084) | mean test 0.9471 (sd 0.0075)
+
+--- 1. Why not rules? A keyword rule system on the test split ---
+keyword rules: macro F1 0.7384 | accuracy 0.7526
+
+--- Model 1: TF-IDF + LR: test split ---
+                            precision    recall  f1-score   support
+
+Cardiovascular / Pulmonary      0.953     0.938     0.946        65
+                Orthopedic      0.976     0.932     0.953        44
+          General Medicine      0.791     0.872     0.829        39
+          Gastroenterology      0.941     0.914     0.928        35
+   Obstetrics / Gynecology      1.000     0.964     0.982        28
+                   Urology      0.958     0.920     0.939        25
+                 Neurology      0.769     0.833     0.800        24
+      ENT - Otolaryngology      0.938     0.938     0.938        16
+             Ophthalmology      1.000     1.000     1.000        15
+
+                  accuracy                          0.921       291
+                 macro avg      0.925     0.923     0.924       291
+              weighted avg      0.925     0.921     0.922       291
+
+Model 1: TF-IDF + LR: macro F1 0.9238 (95% CI 0.891 to 0.952) | accuracy 0.9210 | weighted F1 0.9223
+
+--- Model 2: PubMedBERT (head_tail): test split ---
+                            precision    recall  f1-score   support
+
+Cardiovascular / Pulmonary      0.984     0.923     0.952        65
+                Orthopedic      0.978     1.000     0.989        44
+          General Medicine      0.842     0.821     0.831        39
+          Gastroenterology      0.872     0.971     0.919        35
+   Obstetrics / Gynecology      1.000     0.964     0.982        28
+                   Urology      0.960     0.960     0.960        25
+                 Neurology      0.875     0.875     0.875        24
+      ENT - Otolaryngology      0.941     1.000     0.970        16
+             Ophthalmology      1.000     1.000     1.000        15
+
+                  accuracy                          0.938       291
+                 macro avg      0.939     0.946     0.942       291
+              weighted avg      0.939     0.938     0.938       291
+
+Model 2: PubMedBERT (head_tail): macro F1 0.9420 (95% CI 0.914 to 0.967) | accuracy 0.9381 | weighted F1 0.9381
+Keyword rules: macro F1 0.7384 (95% CI 0.688 to 0.782) | accuracy 0.7526 | weighted F1 0.7314
+rules wrong but Model 2 right on 61 test notes. Example: 'Diagnostic Cerebral Angiogram'
+  true Neurology | rules Cardiovascular / Pulmonary (20 hits: artery) | true department's hits 4 | Model 2 Neurology (0.95)
+   EXAM: 1. Diagnostic cerebral angiogram. 2. Transcatheter infusion of papaverine. ANESTHESIA: General anesthesia FLUORO TIME: 19.5 minutes CONTRAST: Visipaque-270, 100 mL INDICATIONS FOR PROCEDURE: The patient is a 13-year-old boy who had clipping for a left ICA bifurcation aneurysm. He was referred  ...
+
+--- 5.1 Comparison on the test split ---
+                                 macro F1       95% CI  accuracy              parameters CPU ms per note
+model                                                                                                   
+Keyword rules                      0.7384  0.688-0.782    0.7526  102 hand-written words                
+Model 1: TF-IDF + LR               0.9238  0.891-0.952    0.9210                  73,710            0.48
+Model 2: PubMedBERT (head_tail)    0.9420  0.914-0.967    0.9381             109,489,161           341.0
+
+--- 5.2 F1 per department ---
+                            test notes  Model 1 F1  Model 2 F1  difference
+Cardiovascular / Pulmonary          65       0.946       0.952       0.007
+Orthopedic                          44       0.953       0.989       0.035
+General Medicine                    39       0.829       0.831       0.002
+Gastroenterology                    35       0.928       0.919      -0.009
+Obstetrics / Gynecology             28       0.982       0.982       0.000
+Urology                             25       0.939       0.960       0.021
+Neurology                           24       0.800       0.875       0.075
+ENT - Otolaryngology                16       0.938       0.970       0.032
+Ophthalmology                       15       1.000       1.000       0.000
+
+--- 5.3 Is the difference real? ---
+macro F1 difference +0.0182 | 95% paired bootstrap -0.0074 to +0.0474 | Model 2 better in 90.6% of resamples
+both correct 261 | only Model 1 7 | only Model 2 12 | both wrong 11 | McNemar exact p = 0.3593
+
+--- 5.4 Most frequent confusions (true -> predicted: notes) ---
+Model 1 | Gastro -> Gen Med: 3; Neurology -> Gen Med: 2; Cardio/Pulm -> Neurology: 2; Gen Med -> Neurology: 2; Orthopedic -> Neurology: 2
+Model 2 | Gen Med -> Gastro: 3; Neurology -> Gen Med: 2; Cardio/Pulm -> Gastro: 2; Cardio/Pulm -> Gen Med: 2; Gen Med -> Neurology: 2
+
+--- 5.5 The 6 most confident errors of Model 2 ---
+* true General Medicine | Model 2 Orthopedic (0.993) | Model 1 Orthopedic | title 'Fall - ER Visit' | website labels Emergency Room Reports + General Medicine
+   HISTORY OF PRESENT ILLNESS: The patient is an 88-year-old white female, household ambulator with a walker, who presents to the emergency department this morning after incidental fall at home. The pati ...
+* true Urology | Model 2 General Medicine (0.989) | Model 1 General Medicine | title 'Hematuria - Consult' | website labels Consult - History and Phy. + Urology
+   HISTORY OF PRESENT ILLNESS: This is a 77-year-old male, who presents with gross hematuria that started this morning. The patient is a difficult historian, does have a speech impediment, slow to answer ...
+* true Cardiovascular / Pulmonary | Model 2 Neurology (0.988) | Model 1 Neurology | title 'MRI of Lung - Adenocarcinoma' | website labels Cardiovascular / Pulmonary + Radiology
+   CC: Found unresponsive. HX: 39 y/o RHF complained of a severe HA at 2AM 11/4/92. It was unclear whether she had been having HA prior to this. She took an unknown analgesic, then vomited, then lay down ...
+* true General Medicine | Model 2 Neurology (0.988) | Model 1 Neurology | title 'MRI Brain - CO poisoning' | website labels General Medicine + Radiology
+   CC: Found down. HX: 54y/o RHF went to bed at 10 PM at her boyfriend's home on 1/16/96. She was found lethargic by her son the next morning. Three other individuals in the house were lethargic and comp ...
+* true Cardiovascular / Pulmonary | Model 2 Gastroenterology (0.988) | Model 1 Cardiovascular / Pulmonary | title 'Triple Lumen Catheter Insertion - 1' | website labels Cardiovascular / Pulmonary + Surgery
+   PREOPERATIVE DIAGNOSIS: Need for intravenous access. POSTOPERATIVE DIAGNOSIS: Need for intravenous access. PROCEDURE PERFORMED: Insertion of a right femoral triple lumen catheter. ANESTHESIA: Includes ...
+* true Cardiovascular / Pulmonary | Model 2 Gastroenterology (0.986) | Model 1 Gastroenterology | title 'Aortobifemoral Bypass' | website labels Cardiovascular / Pulmonary + Surgery
+   PREOPERATIVE DIAGNOSIS: Aortoiliac occlusive disease. POSTOPERATIVE DIAGNOSIS: Aortoiliac occlusive disease. PROCEDURE PERFORMED: Aortobifemoral bypass. OPERATIVE FINDINGS: The patient was taken to th ...
+
+--- 5.5 Accuracy by note length (148 short, 143 long test notes) ---
+Model 1: TF-IDF + LR: short 0.946 | long 0.895
+Model 2: PubMedBERT (head_tail): short 0.953 | long 0.923
+
+--- 5.6 Do the models use negation? (cues removed from the test notes) ---
+Model 1: TF-IDF + LR: predictions that change 0.7% | macro F1 0.9238 -> 0.9185 | mean change in true-class probability -0.0009
+Model 2: PubMedBERT (head_tail): predictions that change 0.3% | macro F1 0.9420 -> 0.9394 | mean change in true-class probability -0.0020
+
+--- 6.1 Accuracy by patient group (95% bootstrap interval) ---
+              test notes            Model 1            Model 2
+group                                                         
+sex: female          107  0.925 (0.88-0.97)  0.925 (0.87-0.97)
+sex: male             98  0.867 (0.81-0.93)  0.908 (0.85-0.96)
+sex: unknown          86  0.977 (0.94-1.00)  0.988 (0.95-1.00)
+age: 0-17             19  0.895 (0.74-1.00)  0.947 (0.84-1.00)
+age: 18-64            82  0.915 (0.85-0.96)  0.927 (0.87-0.98)
+age: 65+              43  0.884 (0.79-0.98)  0.884 (0.79-0.98)
+age: unknown         147  0.939 (0.90-0.97)  0.959 (0.93-0.99)
+department mix by sex:
+sex            female  male  unknown
+label                               
+Cardio/Pulm        18    17       30
+ENT                 4     7        5
+Gastro             13     9       13
+Gen Med            16    17        6
+Neurology           7    13        4
+Ob/Gyn             21     0        7
+Ophthalmology       4     3        8
+Orthopedic         21    19        4
+Urology             3    13        9
+
+--- 6.2 Personal data still in the kept notes ---
+notes with an age: 709 (48.8%)
+notes with a date: 231 (15.9%)
+notes with a doctor's name or placeholder: 328 (22.6%)
+notes with a placeholder name (XYZ, ABC): 110 (7.6%)
+
+--- 7.1 Calibration on the test split ---
+Model 1: TF-IDF + LR: ECE 0.0697 | mean confidence 0.853 | accuracy 0.921
+Model 2: PubMedBERT (head_tail): ECE 0.0532 | mean confidence 0.975 | accuracy 0.938
+
+--- 7.2 Thresholds chosen on validation (target 95%): Model 1 0.81, Model 2 0.97 ---
+              fast track  accuracy on fast track  accuracy of the rest out-of-scope on fast track (always wrong)  wrong fast-track per 1,000 in-scope  full reviews per 1,000 in-scope
+rule                                                                                                                                                                                  
+Model 1 alone      72.9%                   0.967                 0.797                                     15.0%                                   24                              271
+Model 2 alone      86.9%                   0.968                 0.737                                     51.6%                                   27                              131
+Two keys           67.4%                   0.974                 0.863                                     11.5%                                   17                              326
+Model 1: TF-IDF + LR: top-2 accuracy 0.993 (a reviewer who sees two suggestions)
+Model 2: PubMedBERT (head_tail): top-2 accuracy 0.986 (a reviewer who sees two suggestions)
+mean confidence on out-of-scope notes: Model 1 0.530 | Model 2 0.894
+where Model 2 alone sends the 238 out-of-scope notes it is sure of (top 6 departments):
+sent to                  Cardio/Pulm  ENT  Gastro  Gen Med  Neurology  Ob/Gyn  Ophthalmology  Orthopedic  Urology
+true department                                                                                                  
+Pain Management                    2    0       1        0          0       0              0          33        0
+Hematology - Oncology              8    3       0       14          3       7              0           0        0
+Surgery                            6    0       7        0          0       8              2           5        2
+Nephrology                         8    0       0        6          0       0              0           0       10
+Psychiatry / Psychology            2    0       0       11          3       0              0           0        0
+Pediatrics - Neonatal              1    0       1       12          0       0              0           0        0
+
+--- 7.3 Cost ---
+Model 1: 73,710 parameters | train 0.8 s on a CPU | 0.48 ms per note on a CPU
+Model 2: 109,489,161 parameters | train 3.0 min on the GPU | 7.5 ms per note on the GPU, 341 ms on a CPU (about 10,566 notes per CPU hour)
+
+--- 7.4 Redaction of direct identifiers ---
+test notes with a direct identifier: 74 of 291 | replaced: {'record number': 2, 'name after a title': 40, 'date': 132}
+Model 1: macro F1 0.9238 without redaction, 0.9250 with | predictions that change 2
+Model 2 (saved copy): macro F1 0.9456 without redaction, 0.9456 with | predictions that change 0
+
+--- 7.4 Membership inference (AUC 0.5 = cannot tell training notes from test notes) ---
+Model 1: mean true-class confidence, training 0.9804 | test 0.8202 | AUC 0.7615
+Model 2 (saved copy): mean true-class confidence, training 0.9924 | test 0.9323 | AUC 0.5831
+
+--- 7.5 The saved Model 2 copy (GPU training is not bit-for-bit repeatable) ---
+validation macro F1 0.9299 | test macro F1 0.9456 | its own threshold 0.98
+
+Done. Figures in C:\Users\Deevesh\Desktop\assignment 3 ai\submission\outputs\figures; this log in C:\Users\Deevesh\Desktop\assignment 3 ai\submission\outputs\results.txt

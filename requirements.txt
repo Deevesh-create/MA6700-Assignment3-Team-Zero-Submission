@@ -1,0 +1,10 @@
+# Python 3.12. The default run (saved fine-tuning runs) works on a CPU.
+# For --retrain on an NVIDIA GPU, install the CUDA build of torch first:
+#   pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0
+transformers==5.19.0
+scikit-learn==1.9.1
+pandas==3.0.6
+numpy==2.5.4
+scipy==1.18.1
+matplotlib==3.11.2
