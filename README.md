@@ -8,7 +8,7 @@ Team: Immanuel James Wong Hon Leung (leader), Mevin Ramjeet, Jeffrey Li Chiu Lim
 | Deliverable | File |
 |---|---|
 | 1. Code | `run_pipeline.py` and the `clinical_router/` package (below) |
-| 2. Report (PDF) | `Team_Zero_Report.pdf` |
+| 2. Report | `Team_Zero_Report.pdf` (to submit) and `Team_Zero_Report.docx` (the same report, editable in Word) |
 | 3. Presentation | `Team_Zero_Presentation.pptx` (12 slides, speaker notes name the presenter and give the script) |
 
 ## Run it
