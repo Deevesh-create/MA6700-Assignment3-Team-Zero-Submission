@@ -74,7 +74,4 @@ python -m venv .venv
 The libraries (scikit-learn, PyTorch, Transformers, pandas, matplotlib, SciPy) are used through their public APIs.
 
 ## Use of an AI assistant
-
 We used an AI assistant (Claude, from Anthropic) to write and restructure this code from our analysis notebook. It also ran the code and drafted the comments.
-
-**[Team: before submission, replace this sentence with what each member checked, changed and can explain.]**
