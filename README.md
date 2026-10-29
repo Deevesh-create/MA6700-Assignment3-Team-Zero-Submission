@@ -5,11 +5,8 @@ Model 2 is a fine-tuned PubMedBERT. Both use the MTSamples transcriptions (Kaggl
 
 Team: Immanuel James Wong Hon Leung (leader), Mevin Ramjeet, Jeffrey Li Chiu Lim, Deevesh Rughoo.
 
-| Deliverable | File |
-|---|---|
-| 1. Code | `run_pipeline.py` and the `clinical_router/` package (below) |
-| 2. Report | `Team_Zero_Report.pdf` (to submit) and `Team_Zero_Report.docx` (the same report, editable in Word) |
-| 3. Presentation | `Team_Zero_Presentation.pptx` (12 slides, speaker notes name the presenter and give the script) |
+This repository holds the code: `run_pipeline.py` and the `clinical_router/` package (below). The report (PDF) and the
+presentation slides are submitted separately.
 
 ## Run it
 
