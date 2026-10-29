@@ -21,6 +21,7 @@ python -m venv .venv
 .venv\Scripts\python run_pipeline.py
 ```
 
+- **Windows: put the folder at a short path** (for example `C:\cnr`). Windows limits a file path to 260 characters, and some files inside the `transformers` package sit deep in `.venv`, so a long folder path makes `import transformers` fail with `FileNotFoundError`.
 - **`run_pipeline.py` is the only entry point.** It runs every stage, from the raw CSV to every number and figure in the report.
 - It prints the metrics and saves the same log to `outputs/results.txt`. Figures go to `outputs/figures/`, and the split to `outputs/split.csv`.
 - The default run loads the nine saved fine-tuning runs from `outputs/runs/`. It needs no GPU and takes a few minutes.
