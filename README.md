@@ -27,7 +27,14 @@ python -m venv .venv
 - The default run loads the nine saved fine-tuning runs from `outputs/runs/`. It needs no GPU and takes a few minutes.
 - The first run downloads three public tokenizers from Hugging Face, so it needs internet access. No login or token is used.
 - `python run_pipeline.py --retrain` fine-tunes all nine transformer runs again. This needs an NVIDIA GPU and the CUDA build of torch (see `requirements.txt`), and takes about 45 minutes on a 6 GB RTX 4050. GPU training is not bit-for-bit repeatable, so new runs can differ in the third decimal.
-- **Optional: Model 2 privacy checks.** The redaction and membership-inference checks for Model 2 need the saved weights (419 MB) in `models/model2/`. They are not in this submission because of their size. Without them, the pipeline skips those two Model 2 checks, says so, and runs everything else.
+- **Optional: the Model 2 weights.** Three checks need the saved weights of Model 2 (438 MB): the redaction test, the membership-inference test, and the copy's own validation score and threshold (pipeline sections 7.4 and 7.5). Without the weights, the pipeline skips those three checks, says so, and runs everything else. The file is too large for the repository, so it is attached to **Release v1.0** as `model2.zip`. Download it into this folder and unzip it into `models/` (the result must be `models/model2/model.safetensors`):
+
+  ```bash
+  gh release download v1.0 -p model2.zip -R Deevesh-create/MA6700-Assignment3-Team-Zero-Submission
+  .venv\Scripts\python -m zipfile -e model2.zip models
+  ```
+
+  Without the GitHub CLI, download `model2.zip` from the repository's Releases page instead.
 
 ## Structure
 
